@@ -32,6 +32,7 @@ const Courses = () => {
             JavaScript and React.
           </p>
         </article>
+
         <article>
           <div>
             {courseIcons.map((icon) => (
@@ -91,17 +92,22 @@ const Courses = () => {
         <article>
           <div className="article-content pb-2">
             <p>Fundamentals</p>
-            <span>
+            <span className="span-normal">
               The first phase of this bootcamp is to help you appreciate the
               fundamentals of web development,
               <br />
               understanding structure, design and getting comfortable coding in
               HTML, CSS and Sass.
             </span>
+            <span className="span-mobile">
+              The first phase of this bootcamp is to help you appreciate the
+              fundamentals of web development, understanding structure, design
+              and getting comfortable coding in HTML, CSS and Sass.
+            </span>
           </div>
           <div className="article-content pb-4">
             <p>Using Boostrap</p>
-            <span>
+            <span className="span-normal">
               You’ll learn speedup your development and layout mobile-ready
               webpages using the most popular
               <br />
@@ -110,10 +116,16 @@ const Courses = () => {
               <br />
               render perfectly on all display platforms.
             </span>
+            <span className="span-mobile">
+              You’ll learn speedup your development and layout mobile-ready
+              webpages using the most popular CSS Framework - Boostrap 4. You’ll
+              understand how to automatically create responsive websites that
+              render perfectly on all display platforms.
+            </span>
           </div>
           <div className="article-content pt-1 pb-1">
             <p>JavaScript Basics</p>
-            <span>
+            <span className="span-normal">
               After mastering the fundamentals, the focus shifts towards
               frontend programming where you learn
               <br />
@@ -122,60 +134,96 @@ const Courses = () => {
               <br />
               structures and conditionals.
             </span>
+            <span className="span-mobile">
+              After mastering the fundamentals, the focus shifts towards
+              frontend programming where you learn the basics of JavaScript. In
+              this section, you’ll be introduced to data structures, data types,
+              control structures and conditionals.
+            </span>
           </div>
           <div className="article-content pt-4 pb-5">
             <p>JavaScript and the DOM</p>
-            <span>
+            <span className="span-normal">
               After taking care of the fundamentals, you’ll learn to interact
               with the Document Object Model (DOM),
               <br />
               listen to user interactions and add change the contents of a
               webpage.
             </span>
+            <span className="span-mobile">
+              After taking care of the fundamentals, you’ll learn to interact
+              with the Document Object Model (DOM), listen to user interactions
+              and add change the contents of a webpage.
+            </span>
           </div>
           <div className="article-content pt-5">
             <p>Object-Oriented JavaScript</p>
-            <span>
+            <span className="span-normal">
               You’ll learn to build real-life applications using object-oriented
               JavaScript techniques. You’ll also learn
               <br />
               the major improvements of JavaScript in the form of ES6.
             </span>
+            <span className="span-mobile">
+              You’ll learn to build real-life applications using object-oriented
+              JavaScript techniques. You’ll also learn the major improvements of
+              JavaScript in the form of ES6.
+            </span>
           </div>
           <div className="article-content pt-2">
             <p>React Library</p>
-            <span>
+            <span className="span-normal">
               You’ll be introduced to the most popular JavaScript library - the
               REACT library. You’ll learn to build
               <br />a React application from scratch, utilizing the react
               components to manage the user interface.
             </span>
+            <span className="span-mobile">
+              You’ll be introduced to the most popular JavaScript library - the
+              REACT library. You’ll learn to build a React application from
+              scratch, utilizing the react components to manage the user
+              interface.
+            </span>
           </div>
           <div className="article-content">
             <p>Developer Tools & Testing</p>
-            <span>
+            <span className="span-normal">
               You’ll be introduced to the Chrome Developers’ Tool and how to use
               it to debug and maintain your
               <br />
               application. Learn to use testing to help build app features.
             </span>
+            <span className="span-mobile">
+              You’ll be introduced to the Chrome Developers’ Tool and how to use
+              it to debug and maintain your application. Learn to use testing to
+              help build app features.
+            </span>
           </div>
           <div className="article-content pt-2">
             <p>Version Control</p>
-            <span>
+            <span className="span-normal">
               You’ll learn to use the Git version control system, collaborate
               with other team members and push your
               <br />
               projects to GitHub using Git
             </span>
+            <span className="span-mobile">
+              You’ll learn to use the Git version control system, collaborate
+              with other team members and push your projects to GitHub using Git
+            </span>
           </div>
           <div className="article-content">
             <p>Production Deployment</p>
-            <span>
+            <span className="span-normal">
               You’ll be taught how to deploy your production ready project to a
               public web server to be accessed by
               <br />
               everyone in the online community.
+            </span>
+            <span className="span-mobile">
+              You’ll be taught how to deploy your production ready project to a
+              public web server to be accessed by everyone in the online
+              community.
             </span>
           </div>
         </article>
