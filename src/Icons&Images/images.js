@@ -13,6 +13,18 @@ import IconWorkSpace from "./TechStudioIcons/noun_workspace_799121.png";
 import IconInsurance from "./TechStudioIcons/Insurance.png";
 import team from "./TechStudioImages/team.png";
 import aboutSmile from "./TechStudioImages/Image 134.png";
+import aboutRectangle from "./TechStudioImages/Rectangle 7475.png";
+import repeatGridLight from "./TechStudioImages/Repeat Grid 38.png";
+import HTML from "./TechStudioImages/Mask Group 57.png";
+import CSS from "./TechStudioImages/Mask Group 58.png";
+import Javascript from "./TechStudioImages/Mask Group 59.png";
+import VUE from "./TechStudioImages/Mask Group 60.png";
+import Angular from "./TechStudioImages/Mask Group 61.png";
+import React from "./TechStudioImages/Mask Group 62.png";
+import thread from "./TechStudioImages/Group 25355.png";
+import icon01 from "./TechStudioImages/Group 25213.png";
+import icon02 from "./TechStudioImages/Group 25214.png";
+import icon03 from "./TechStudioImages/Group 25215.png";
 
 const Images = {
     ellipse,
@@ -30,6 +42,18 @@ const Images = {
     IconInsurance,
     team,
     aboutSmile,
+    aboutRectangle,
+    repeatGridLight,
+    HTML,
+    CSS,
+    Javascript,
+    VUE,
+    Angular,
+    React,
+    thread,
+    icon01,
+    icon02,
+    icon03,
 }
 
 export default Images;

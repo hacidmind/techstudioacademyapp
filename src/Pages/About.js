@@ -2,6 +2,7 @@ import React from "react";
 
 import "../css/about.css";
 import { Images } from "../Icons&Images";
+import GetStarted from "../components/GetStarted";
 
 const About = () => {
   const values = [
@@ -104,21 +105,10 @@ const About = () => {
       </section>
       <section className="about__section-4">
         <div>
-            <img src={Images.team} alt="team" />
+          <img src={Images.team} alt="team" />
         </div>
       </section>
-      <section className="about__section-5">
-        <article>
-            <p>Try TechStudio</p>
-            <h5>Get started with Techstudio</h5>
-            <button>Get Started</button>
-        </article>
-        <article>
-            <div>
-                <img src={Images.aboutSmile} alt="about smile" />
-            </div>
-        </article>
-      </section>
+      <GetStarted />
     </main>
   );
 };
