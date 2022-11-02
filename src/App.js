@@ -12,7 +12,7 @@ const App = ()=> {
         <Layout>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route exact path='/blog' element={<About />} />
+            <Route exact path='/about-us' element={<About />} />
             <Route exact path='*' element={<ErrPage />} />
           </Routes>
         </Layout>
