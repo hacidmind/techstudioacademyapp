@@ -4,7 +4,11 @@ import Home from './components/Home';
 import About from './Pages/About';
 import Layout from './hocs/Layout';
 import ErrPage from './components/ErrPage';
-import Courses from './Pages/Courses';
+import Frontend from './Pages/Frontend';
+import DataScience from './Pages/DataScience';
+import Fullstack from './Pages/Fullstack';
+import MobileDev from './Pages/MobileDev';
+import UIUX from './Pages/UIUX';
 
 const App = ()=> {
   return (
@@ -14,7 +18,11 @@ const App = ()=> {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/about-us' element={<About />} />
-            <Route exact path='/courses' element={<Courses />} />
+            <Route exact path='/frontend' element={<Frontend />} />
+            <Route exact path='/data-science' element={<DataScience />} />
+            <Route exact path='/fullstack' element={<Fullstack />} />
+            <Route exact path='/mobile-development' element={<MobileDev />} />
+            <Route exact path='/ui-ux' element={<UIUX />} />
             <Route exact path='*' element={<ErrPage />} />
           </Routes>
         </Layout>

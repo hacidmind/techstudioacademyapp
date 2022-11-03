@@ -123,8 +123,9 @@
 
 .article-content {
     display: flex;
-    align-items: center;
-    margin-bottom: 53px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 60px;
     position: relative;
 }
 
