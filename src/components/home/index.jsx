@@ -1,6 +1,8 @@
 import React from "react";
 import Illustration from "../Illustration";
 import Hero from "./Hero";
+import Banner from "../Banner";
+import Profile from "../Profile";
 
 const index = () => {
   const style = {
@@ -10,9 +12,9 @@ const index = () => {
   };
   return (
     <main>
-      <article className="bg-purple ">
+      <main className="bg-blue ">
         <Hero />
-      </article>
+      </main>
       <main className="position-relative mt-12 mb-40">
         <article className="container">
           <img
@@ -56,6 +58,18 @@ const index = () => {
             </div>
           </article>
         </article>
+      </main>
+      <main className="container mt-60 mb-52">
+        <Banner>
+          <div className="text-white w-50 text-center d-flex flex-column align-items-center gap-10">
+            <p className="">
+              I have been trying to figure out a way to kickstart my career in
+              tech to no avail. I tried self tutorial, still nothing. When I
+              tried techstudio 10 weeks training, my story changed for better
+            </p>
+            <Profile />
+          </div>
+        </Banner>
       </main>
     </main>
   );
