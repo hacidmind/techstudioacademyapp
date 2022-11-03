@@ -1,7 +1,7 @@
-import './App.css';
+import "./scss/custom.scss"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
+import Home from './components/home';
+import About from './components/about';
 import Layout from './hocs/Layout';
 import ErrPage from './components/ErrPage';
 
