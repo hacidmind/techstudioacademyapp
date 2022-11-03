@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import { Images } from "../Icons&Images";
 import Courses from "../components/Courses";
@@ -29,11 +29,11 @@ const Fullstack = () => {
   const courseCurriculum = [
     {
       title: "Fundamentals",
-      desc: "The first phase of this bootcamp is to help you appreciate the fundamentals of software development, understanding programming fundamentals to launching full-stack web apps."
+      desc: "The first phase of this bootcamp is to help you appreciate the fundamentals of software development, understanding programming fundamentals to launching full-stack web apps.",
     },
     {
       title: "JavaScript",
-      desc: "You’ll be taught to build smart, data-driven web applications using JavaScript and it’s backend counterpart - PHP"
+      desc: "You’ll be taught to build smart, data-driven web applications using JavaScript and it’s backend counterpart - PHP",
     },
     {
       title: "MySQL",
@@ -41,9 +41,9 @@ const Fullstack = () => {
     },
     {
       title: "Work with a team",
-      desc: "And finally, you’ll learn the fundamentals of working as a team; collaborate with other group members of the class to build, change, maintain, and secure an application. Track your team development process using Version Control Systems."
+      desc: "And finally, you’ll learn the fundamentals of working as a team; collaborate with other group members of the class to build, change, maintain, and secure an application. Track your team development process using Version Control Systems.",
     },
-  ]
+  ];
 
   return (
     <main>
@@ -51,10 +51,10 @@ const Fullstack = () => {
         courseTitle="Fullstack Web Development"
         courseDescription={courseDescription}
         courseIcons={courseIcons}
-        courseCurriculum ={courseCurriculum}
+        courseCurriculum={courseCurriculum}
       />
     </main>
-  )
-}
+  );
+};
 
 export default Fullstack;

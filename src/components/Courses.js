@@ -4,8 +4,12 @@ import { Images } from "../Icons&Images";
 import "../css/Courses.css";
 import GetStarted from "./GetStarted";
 
-const Courses = ({ courseIcons, courseTitle, courseDescription, courseCurriculum }) => {
-
+const Courses = ({
+  courseIcons,
+  courseTitle,
+  courseDescription,
+  courseCurriculum,
+}) => {
   return (
     <main className="container courses">
       <section className="courses__section-1">
@@ -71,12 +75,11 @@ const Courses = ({ courseIcons, courseTitle, courseDescription, courseCurriculum
           <img src={Images.thread} alt="thread" />
         </article>
         <article>
-          {courseCurriculum.map((item)=> (
-
-          <div className="article-content pb-2">
-            <p>{item.title}</p>
-            <span>{item.desc}</span>
-          </div>
+          {courseCurriculum.map((item) => (
+            <div className="article-content pb-2">
+              <p>{item.title}</p>
+              <span>{item.desc}</span>
+            </div>
           ))}
         </article>
       </section>
