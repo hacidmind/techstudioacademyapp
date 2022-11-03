@@ -12,7 +12,7 @@ const Navbar = () => (
           <div>
             <img src={Images.logo} alt="logo" />
           </div>
-          <p>Techstudio Academy</p>
+          <p className="d-none d-lg-block">Techstudio Academy</p>
         </div>
       </Link>
       <button

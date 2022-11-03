@@ -4,13 +4,6 @@
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    
-.contact-container {
-    margin-top: 80px;
-    padding-left: 50px;
-}
-
 .contact-h1 {
     text-align: left;
     font-family: 'Open Sans';
@@ -21,12 +14,28 @@
     opacity: 1;
 }
 
-.contact-p{
+.contact-p {
     color: #1F2666;
     font-weight: bold;
 }
 
-.sm{
+.sm {
     padding: 10px 100px;
 }
+
+@media (min-width: 768px) {
+
+    .contact-container {
+        margin-top: 80px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    h1 {
+        /* color: red; */
+    }
+
+
 }

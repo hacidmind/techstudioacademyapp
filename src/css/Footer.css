@@ -1,3 +1,17 @@
 .footer{
     background-color: #1F2666;
 }
+
+.btn-move{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.div-move{
+    position: relative;
+}
+
+.input-tag{
+    height: 50px;
+}
