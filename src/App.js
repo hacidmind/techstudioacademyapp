@@ -9,6 +9,7 @@ import DataScience from "./Pages/DataScience";
 import Fullstack from "./Pages/Fullstack";
 import MobileDev from "./Pages/MobileDev";
 import UIUX from "./Pages/UIUX";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route exact path="/fullstack" element={<Fullstack />} />
             <Route exact path="/mobile-development" element={<MobileDev />} />
             <Route exact path="/ui-ux" element={<UIUX />} />
+            <Route exact path="/contact" element={<Contact />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>

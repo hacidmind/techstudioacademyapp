@@ -5,7 +5,7 @@ import "../css/navbar.css";
 import { Images } from "../Icons&Images";
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg bg-light">
+  <nav className="navbar navbar-expand-lg">
     <div className="container" id="nav-container">
       <Link className="navbar-brand" to="/">
         <div className="logo">
@@ -71,7 +71,7 @@ const Navbar = () => (
           <Link className="nav-link" to="/">
             Employers
           </Link>
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/contact">
             Contact Us
           </Link>
         </div>
