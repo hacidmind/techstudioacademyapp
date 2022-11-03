@@ -1,0 +1,18 @@
+### BLUES
+Primary
+blue
+purple
+lightBlue
+
+You Must make frequent atomic commits to your GitHub repository and keep standard on commit messages.
+
+Example:
+feat: The new feature you're adding to a particular application
+fix: A bug fix
+style: Feature and updates related to styling
+refactor: Refactoring a specific section of the code-base
+test: Everything related to testing
+docs: Everything related to documentation
+chore: Regular code maintenance.
+
+in this manner git commit -m "feat: The new feature you're adding to a particular application"
