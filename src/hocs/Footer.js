@@ -3,6 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Footer.css";
 import techimage from "../Icons&Images/TechStudioImages/Image129.png";
+import fb from "../Icons&Images/TechStudioIcons/facebook.png"
+import twitter from "../Icons&Images/TechStudioIcons/twitter.png"
+import linkedin from "../Icons&Images/TechStudioIcons/linkedin.png"
 
 
 const Footer = () => {
@@ -54,17 +57,17 @@ const Footer = () => {
             <ul className="list-unstyled d-flex">
               <li className="ms-3">
                 <Link className="link-light" to="/">
-                  twitter
+                  <img src={twitter} alt="" />
                 </Link>
               </li>
               <li className="ms-3">
                 <Link className="link-light" to="/">
-                  insta
+                <img src={fb} alt="" />
                 </Link>
               </li>
               <li className="ms-3">
                 <Link className="link-light" to="/">
-                  face
+                <img src={linkedin} alt="" />
                 </Link>
               </li>
             </ul>
