@@ -1,0 +1,48 @@
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.logo > p {
+  padding-top: 15px;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.auth-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.auth-button > button:nth-child(1) {
+  border: none;
+  width: 100px;
+  height: 40px;
+  background: #0266f4;
+  box-shadow: 0px 1px 3px #00000029;
+  border-radius: 4px;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-button > button:nth-child(2) {
+  border: none;
+  background: none;
+  color: #1f2666;
+  font-size: 14px;
+  font-weight: 600;
+}
