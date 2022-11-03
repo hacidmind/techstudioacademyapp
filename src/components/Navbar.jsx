@@ -5,11 +5,11 @@ import Button from "./buttons/Button";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg bg-transparent">
-    <div className="container">
+    <div className="container py-3">
       <Link className="navbar-brand" to="/">
         <div className="d-flex align-items-center gap-2">
           <img src={techimage} alt="logo" />
-          <span>Techstudio Academy</span>
+          <span className="fs-lg fw-bold">Techstudio Academy</span>
         </div>
       </Link>
       <button
@@ -27,7 +27,7 @@ const Navbar = () => (
         className="collapse navbar-collapse d-lg-flex justify-content-between"
         id="navbarNavAltMarkup"
       >
-        <div className="navbar-nav text-center gap-12 ms-lg-60">
+        <div className="navbar-nav text-center gap-12 ms-lg-40 fs-sm">
           <Link className="nav-link active" aria-current="page" to="/">
             About Us
           </Link>
@@ -44,12 +44,12 @@ const Navbar = () => (
         <div className="d-flex gap-3 justify-content-center">
           <Button
             name="Sign In"
-            type={`btn btn-primary px-8`}
+            type={`btn btn-primary px-8 fs-sm`}
             height={`40px`}
           />
           <Button
             name="Sign Up"
-            type={`btn btn-outline px-8 border-0`}
+            type={`btn btn-outline px-8 border-0 fs-sm`}
             height={`40px`}
           />
         </div>
