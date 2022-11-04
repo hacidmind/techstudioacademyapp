@@ -36,7 +36,7 @@ const Navbar = () => (
             About Us
           </Link>
           <Link className="nav-link text-white" to="/about">
-            Courses
+            Courses*
           </Link>
           <Link className="nav-link text-white" to="/about">
             Employers
