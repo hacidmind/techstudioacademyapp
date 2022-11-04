@@ -5,7 +5,7 @@ import techimage from "../Icons&Images/TechStudioImages/Image129.png";
 import Button from "./buttons/Button";
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg fixed-top">
+  <nav className="navbar navbar-expand-lg bg-blue fixed-top">
     <div className="container py-3">
       <Link className="navbar-brand" to="/">
         <div className="d-flex align-items-center gap-2">

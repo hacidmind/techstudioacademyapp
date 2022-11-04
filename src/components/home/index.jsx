@@ -15,7 +15,7 @@ const index = () => {
   };
   return (
     <main>
-      <main className="bg-blue ">
+      <main className="bg-blue mt-20">
         <Hero />
       </main>
 
@@ -75,10 +75,10 @@ const index = () => {
         </Banner>
       </main>
 
-      <main className="container d-flex justify-content-between mb-20 gap-32">
+      <main className="container d-flex align-items-end justify-content-between mb-20 gap-32">
         <article className="d-none d-lg-block">
           <div
-            style={{ width: `30rem`, height: `30rem` }}
+            style={{ width: `40rem`, height: `40rem` }}
             className="position-relative"
           >
             <img
@@ -98,12 +98,12 @@ const index = () => {
             />
           </div>
         </article>
-        <article className="py-20 px-14">
+        <article className="pt-20 pb-8 px-14">
           <h4 className="text-info fs-lg">TAKE A COURSE</h4>
           <h1 className="text-dark fw-bolder my-7">
             Learn a skill to elevate your earning potential
           </h1>
-          <p className="mb-20">
+          <p className="mb-32">
             Our Accelerator program is designed to connect the most ambitious
             university graduates with long-term employment and help you launch
             your career in the tech space.
