@@ -155,3 +155,12 @@ a {
     width: 100%;
   }
 }
+
+.section_2_bg_img {
+  width: 50%;
+  filter: blur(5px);
+  @media screen and (min-width: 1200px) {
+    width: initial;
+    filter: blur(0);
+  }
+}

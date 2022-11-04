@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className="col-12 col-lg-3 text-white my-12 my-lg-0">
               <div>
-                <h5 className="fs-md fw-bolder py-3">Courses</h5>
+                <h5 className="fs-md fw-bolder py-4">Courses</h5>
               </div>
               <ul className="nav flex-column fs-sm mt-5 gap-2">
                 <li className="nav-item mb-2">
@@ -57,7 +57,7 @@ const Footer = () => {
 
             <div className="col-12 col-lg-2 my-12 my-lg-0">
               <div>
-                <h5 className="fs-md fw-bolder py-3">
+                <h5 className="fs-md fw-bolder py-4">
                   <Link className="text-white" to="/">
                     About Us
                   </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="col-12 col-lg-4 text-white fw-bolder">
               <form>
                 <div>
-                  <h5 className="fs-md py-3">Subscribe to our newsletter</h5>
+                  <h5 className="fs-md py-4">Subscribe to our newsletter</h5>
                 </div>
 
                 <div className="input-group mb-3 bg-white rounded-3 p-1">
@@ -99,22 +99,22 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-            <ul className="list-unstyled d-flex">
+          <div className="d-flex flex-column align-items-center  flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 TechStudio Academy</p>
+            <ul className="list-unstyled d-flex gap-5">
               <li className="ms-3">
                 <Link className="text-white">
-                  <FaTwitter />
+                  <FaTwitter className="fs-xl" />
                 </Link>
               </li>
               <li className="ms-3">
                 <Link className="text-white">
-                  <FaFacebookF />
+                  <FaFacebookF className="fs-xl" />
                 </Link>
               </li>
               <li className="ms-3">
                 <Link className="text-white">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="fs-xl" />
                 </Link>
               </li>
             </ul>

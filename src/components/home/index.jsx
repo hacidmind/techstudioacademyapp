@@ -11,16 +11,18 @@ const index = () => {
     position: `absolute`,
     top: `5rem`,
     left: 0,
+    zIndex: -1,
   };
   return (
     <main>
       <main className="bg-blue ">
         <Hero />
       </main>
-      <main className="position-relative mt-20 mt-lg-16 mb-40">
+
+      <main className="position-relative mt-20 mt-lg-16 mb-xl-96">
         <article className="container">
           <img
-            className="d-none d-lg-block"
+            className="d-none d-lg-block section_2_bg_img"
             style={imgStyle}
             alt="img"
             src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Mask_Group_91_sm51se.png"
@@ -59,9 +61,10 @@ const index = () => {
           </article>
         </article>
       </main>
+
       <main className="container mt-60 mb-52 px-0 px-lg-3">
         <Banner>
-          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20 p-lg-72">
+          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20 px-lg-72">
             <p className="text-start text-lg-center lh-lg">
               I have been trying to figure out a way to kickstart my career in
               tech to no avail. I tried self tutorial, still nothing. When I
@@ -71,6 +74,7 @@ const index = () => {
           </div>
         </Banner>
       </main>
+
       <main className="container d-flex justify-content-between mb-20 gap-32">
         <article className="d-none d-lg-block">
           <div
@@ -111,6 +115,7 @@ const index = () => {
           />
         </article>
       </main>
+
       <main className="container">
         <article className="row flex-column-reverse flex-lg-row mb-52">
           <article
@@ -164,6 +169,7 @@ const index = () => {
           </article>
         </article>
       </main>
+
       <main className="container mx-auto my-52 p-0 px-lg-3">
         <BannerII>
           <div className="ms-12 ms-lg-40 text-white py-20">
