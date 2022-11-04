@@ -15,14 +15,10 @@ const Fullstack = () => {
 
   const courseDescription = (
     <p>
-      {" "}
-      Let’s help you become a professional frontend web developer. You’ll
-      <br />
-      learn all you need to know to become a Frontend Developer and build
-      <br />
-      interesting portfolios while learning the fundmentals of HTML, CSS,
-      <br />
-      JavaScript and React.
+      Let’s help you become a professional frontend web developer. You’ll learn
+      all you need to know to become a Frontend Developer and build interesting
+      portfolios while learning the fundmentals of HTML, CSS, JavaScript and
+      React.
     </p>
   );
 
@@ -52,6 +48,7 @@ const Fullstack = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
+        courseThread={Images.thread2}
       />
     </main>
   );

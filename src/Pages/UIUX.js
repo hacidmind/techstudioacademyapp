@@ -15,13 +15,10 @@ const UIUX = () => {
 
   const courseDescription = (
     <p>
-      Learn to design and deliver digital products that serve clients’ needs
-      <br />
-      and solve users’ problems. Understand the fundamental techniques
-      <br />
-      and tools of design like problem definition, user research, prototyping,
-      <br />
-      testing, and more.
+      Learn to design and deliver digital products that serve clients’ needs and
+      solve users’ problems. Understand the fundamental techniques and tools of
+      design like problem definition, user research, prototyping, testing, and
+      more.
     </p>
   );
 
@@ -58,6 +55,7 @@ const UIUX = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
+        courseThread={Images.thread}
       />
     </main>
   );

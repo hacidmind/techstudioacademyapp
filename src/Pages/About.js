@@ -39,8 +39,8 @@ const About = () => {
   ];
   return (
     <main class="container text-center mt-5 about">
-      <section className="row about__section-1">
-        <article className="col section1-article1">
+      <section className="about__section-1">
+        <article className="section1-article1">
           <h6>KNOW US MORE</h6>
           <h3>About Techstudio</h3>
           <p>
@@ -59,31 +59,12 @@ const About = () => {
             you focus on the job at hand
           </p>
         </article>
-        <article className="col section1-article2">
-          <div className="image-eclipse">
-            <img src={Images.ellipse} alt="alt" />
-          </div>
-          <div className="image-desc">
-            <img src={Images.mask} alt="mask" />
-          </div>
+        <article className="section1-article2">
+            <img src={Images.aboutHi} alt="alt" />
         </article>
       </section>
       <section className="about__section-2">
-        <div>
-          <img src={Images.repeatGrid} alt="repeatgrid" />
-        </div>
-        <div>
-          <img src={Images.aboutShowCase1} alt="about1" />
-        </div>
-        <div>
-          <img src={Images.aboutShowCase2} alt="about2" />
-        </div>
-        <div>
-          <img src={Images.aboutShowCase3} alt="about3" />
-        </div>
-        <div>
-          <img src={Images.aboutShowCase4} alt="about4" />
-        </div>
+          <img src={Images.aboutGroup} alt="group" />
       </section>
       <section className="about__section-3">
         <h3>Driven by our core values</h3>

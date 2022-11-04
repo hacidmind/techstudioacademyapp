@@ -9,12 +9,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 
   margin-bottom: 147px;
+
+  /* border: 1px solid green; */
 }
 
 .courses__section-1 > article:nth-child(1) {
   max-width: 33.563rem;
+  /* border: 1px solid red; */
 }
 
 .courses__section-1 > article > h2 {
@@ -28,6 +32,7 @@
   color: #464646;
   font-size: 1rem;
   text-align: left;
+  /* border: 1px solid blue; */
 }
 
 .courses__section-1 > article:nth-child(2) {
@@ -35,19 +40,20 @@
   height: 386px;
   background-color: #dce9fa;
   position: relative;
+  /* border: 1px solid black; */
 }
 
 .courses__section-1 > article:nth-child(2) > div {
   width: 100%;
-  position: absolute;
-  left: -2%;
-  top: 40px;
+  height: 100%;
+  margin-left: -30px;
+  margin-top: 40px;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  column-gap: 2.25rem;
+  column-gap: 1.5rem;
   row-gap: 2rem;
 }
 
@@ -119,14 +125,20 @@
 .courses__section-4 > article:nth-child(2) {
   width: 100%;
   margin-left: 1.469rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 54px;
 }
 
 .article-content {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 60px;
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .article-content > p {
@@ -140,17 +152,12 @@
   opacity: 85%;
   font-size: 1rem;
   max-width: 45.625rem;
-  position: absolute;
+  position: absolute; 
   left: 30%;
 }
 
-/* tab view */
-
-@media screen and (max-width: 900px) {
-  .courses {
-    padding: 50px 0;
-  }
-
+@media screen and (max-width: 1200px) {
+  
   .courses__section-1 {
     width: 100%;
     justify-content: space-between;
@@ -163,6 +170,14 @@
     margin-bottom: 20px;
   }
 
+  .courses__section-1 > article:nth-child(1) > h2 {
+    text-align: center;
+  }
+
+  .courses__section-1 > article:nth-child(1) > p {
+    text-align: center;
+  }
+
   .courses__section-1 > article:nth-child(2) {
     width: 100%;
     height: 386px;
@@ -170,36 +185,9 @@
   }
 
   .courses__section-1 > article:nth-child(2) > div {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    margin: 0;
     justify-content: space-around;
     column-gap: 2.5rem;
-  }
-
-  .courses__section-2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 270px;
-  }
-
-  .courses__section-2 > article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5.438rem;
-    flex-wrap: wrap;
-  }
-
-  .courses__section-4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
   }
 
   .courses__section-4 > article:nth-child(2) {
@@ -231,9 +219,72 @@
     position: relative;
     left: 0;
   }
+}
 
-  .span-normal {
+/* tab view */
+
+@media screen and (max-width: 990px) {
+  .courses {
+    padding: 50px 0;
+  }
+
+  
+
+  .courses__section-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 270px;
+  }
+
+  .courses__section-2 > article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.438rem;
+    flex-wrap: wrap;
+  }
+
+  .courses__section-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .courses__section-4 > article:nth-child(1) {
     display: none;
+  }
+
+  .courses__section-4 > article:nth-child(2) {
+    width: 100%;
+    margin-left: 1.469rem;
+  }
+
+  .article-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding: 0 !important;
+  }
+
+  .article-content > p {
+    color: #1a1a1a;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .article-content > span {
+    color: #1c1d1d;
+    opacity: 85%;
+    font-size: 1rem;
+    max-width: 45.625rem;
+    position: relative;
+    left: 0;
   }
 }
 

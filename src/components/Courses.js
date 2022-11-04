@@ -9,6 +9,7 @@ const Courses = ({
   courseTitle,
   courseDescription,
   courseCurriculum,
+  courseThread
 }) => {
   return (
     <main className="container courses">
@@ -72,7 +73,7 @@ const Courses = ({
       </section>
       <section className="courses__section-4">
         <article>
-          <img src={Images.thread} alt="thread" />
+          <img src={courseThread} alt="thread" />
         </article>
         <article>
           {courseCurriculum.map((item) => (

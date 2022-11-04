@@ -16,12 +16,8 @@ const DataScience = () => {
   const courseDescription = (
     <p>
       Get your hands dirty working with complex data. Dive into the Python
-      <br />
-      programming language, understand data analysis and statistical
-      <br />
-      modeling using Python, after which you move into machine learning
-      <br />
-      and algorithms.
+      programming language, understand data analysis and statistical modeling
+      using Python, after which you move into machine learning and algorithms.
     </p>
   );
 
@@ -59,6 +55,7 @@ const DataScience = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
+        courseThread={Images.thread}
       />
     </main>
   );

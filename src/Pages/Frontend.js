@@ -16,13 +16,10 @@ const Frontend = () => {
   const courseDescription = (
     <p>
       {" "}
-      Let’s help you become a professional frontend web developer. You’ll
-      <br />
-      learn all you need to know to become a Frontend Developer and build
-      <br />
-      interesting portfolios while learning the fundmentals of HTML, CSS,
-      <br />
-      JavaScript and React.
+      Let’s help you become a professional frontend web developer. You’ll learn
+      all you need to know to become a Frontend Developer and build interesting
+      portfolios while learning the fundmentals of HTML, CSS, JavaScript and
+      React.
     </p>
   );
 
@@ -59,6 +56,10 @@ const Frontend = () => {
       title: "Version Control",
       desc: "You’ll learn to use the Git version control system, collaborate with other team members and push your projects to GitHub using Git",
     },
+    {
+      title: "Production Deployment",
+      desc: "You’ll be taught how to deploy your production ready project to a public web server to be accessed by everyone in the online community.",
+    },
   ];
 
   return (
@@ -68,6 +69,7 @@ const Frontend = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
+        courseThread={Images.thread1}
       />
     </main>
   );

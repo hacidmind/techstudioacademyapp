@@ -4,6 +4,8 @@ import aboutShowCase1 from "./TechStudioImages/Image124.png";
 import aboutShowCase2 from "./TechStudioImages/Image125.png";
 import aboutShowCase3 from "./TechStudioImages/Mask Group 40.png";
 import aboutShowCase4 from "./TechStudioImages/Image126.png";
+import aboutHi from "./TechStudioImages/Group new 25356.png";
+import aboutGroup from "./TechStudioImages/Group new 25357.png";
 import repeatGrid from "./TechStudioImages/Repeat Grid 47.png";
 import IconClock from "./TechStudioIcons/clock (4).png";
 import IconTuition from "./TechStudioIcons/money-bag.png";
@@ -43,7 +45,9 @@ import node from "./TechStudioImages/Mask Group 81.png";
 import aws from "./TechStudioImages/Mask Group 83.png";
 import mongo from "./TechStudioImages/Mask Group 84.png";
 import heroku from "./TechStudioImages/Mask Group 86.png";
-import thread from "./TechStudioImages/Group 25355.png";
+import thread from "./TechStudioImages/Group 25374.png";
+import thread1 from "./TechStudioImages/thread1.png";
+import thread2 from "./TechStudioImages/Group 25357.png";
 import icon01 from "./TechStudioImages/Group 25213.png";
 import icon02 from "./TechStudioImages/Group 25214.png";
 import icon03 from "./TechStudioImages/Group 25215.png";
@@ -56,6 +60,8 @@ const Images = {
   aboutShowCase2,
   aboutShowCase3,
   aboutShowCase4,
+  aboutHi,
+  aboutGroup,
   repeatGrid,
   IconClock,
   IconTuition,
@@ -100,6 +106,8 @@ const Images = {
   aws,
   mongo,
   heroku,
+  thread1,
+  thread2
 };
 
 export default Images;

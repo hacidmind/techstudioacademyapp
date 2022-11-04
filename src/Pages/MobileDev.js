@@ -16,10 +16,7 @@ const MobileDev = () => {
   const courseDescription = (
     <p>
       Whether you want to pursue a career as a Mobile App Developer, a
-      <br />
-      Freelancer, or an Entrepreneur, this program prepares you adequately
-      <br />
-      for that.
+      Freelancer, or an Entrepreneur, this program prepares you adequately for that.
     </p>
   );
 
@@ -57,6 +54,7 @@ const MobileDev = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
+        courseThread={Images.thread}
       />
     </main>
   );
