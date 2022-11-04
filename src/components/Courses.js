@@ -9,7 +9,7 @@ const Courses = ({
   courseTitle,
   courseDescription,
   courseCurriculum,
-  courseThread
+  courseThread,
 }) => {
   return (
     <main className="container courses">
@@ -22,7 +22,7 @@ const Courses = ({
         <article>
           <div>
             {courseIcons.map((icon) => (
-              <div className="course-icon">
+              <div className="course-icon" key={icon}>
                 <img src={icon} alt="html" />
               </div>
             ))}
@@ -77,7 +77,7 @@ const Courses = ({
         </article>
         <article>
           {courseCurriculum.map((item) => (
-            <div className="article-content pb-2">
+            <div className="article-content pb-2" key={item.title}>
               <p>{item.title}</p>
               <span>{item.desc}</span>
             </div>

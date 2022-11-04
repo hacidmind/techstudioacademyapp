@@ -60,11 +60,11 @@ const About = () => {
           </p>
         </article>
         <article className="section1-article2">
-            <img src={Images.aboutHi} alt="alt" />
+          <img src={Images.aboutHi} alt="alt" />
         </article>
       </section>
       <section className="about__section-2">
-          <img src={Images.aboutGroup} alt="group" />
+        <img src={Images.aboutGroup} alt="group" />
       </section>
       <section className="about__section-3">
         <h3>Driven by our core values</h3>

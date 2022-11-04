@@ -77,17 +77,7 @@
   height: 88px;
 }
 
-/* tab */
-
-@media screen and (max-width: 900px) {
-  .getStarted {
-    padding: 1rem;
-    justify-content: space-between;
-    gap: 0;
-
-    position: relative;
-  }
-
+@media screen and (max-width: 1200px) {
   .getStarted > div:nth-child(1) {
     display: none;
   }
@@ -97,14 +87,26 @@
   }
 }
 
+/* tab */
+
+@media screen and (max-width: 990px) {
+  .getStarted {
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 0;
+
+    position: relative;
+  }
+}
+
 /* mobile */
 
 @media screen and (max-width: 550px) {
   .getStarted {
     padding: 1rem;
+    margin-bottom: 60px;
     justify-content: center;
     gap: 0;
-
     position: relative;
   }
 
