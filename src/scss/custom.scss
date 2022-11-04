@@ -7,16 +7,16 @@ $primary: #0266f4;
 $info: #5a9eff;
 $dark: #292929;
 // $body-bg: #000;
-$body-color: #979DAD;
+$body-color: #979dad;
 
 $theme-colors: (
   "primary": $primary,
-//   "secondary": $secondary,
-//   "success": $success,
+  //   "secondary": $secondary,
+  //   "success": $success,
   "info": $info,
-//   "warning": $warning,
-//   "danger": $danger,
-//   "light": $light,
+  //   "warning": $warning,
+  //   "danger": $danger,
+  //   "light": $light,
   "dark": $dark,
 );
 
@@ -112,7 +112,7 @@ $font-sizes: (
   letter-spacing: 1.5px;
 
   @media screen and (min-width: 48em) {
-    // font-size: calc(7px + 0.390625vw);
+    font-size: calc(7px + 0.390625vw);
   }
 }
 a {
@@ -132,4 +132,26 @@ a {
   background-size: cover;
   background-position: center;
   object-fit: cover;
+}
+
+.section-2,
+.illustration_3 {
+  @media screen and (min-width: 992px) {
+    width: 60%;
+  }
+}
+
+.bannerI,
+.bannerII {
+  @media screen and (min-width: 992px) {
+    height: 25.25rem;
+    border-radius: 16px;
+  }
+}
+
+.hero_img {
+  width: 80%;
+  @media screen and (min-width: 992px) {
+    width: 100%;
+  }
 }

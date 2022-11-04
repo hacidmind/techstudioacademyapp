@@ -13,6 +13,7 @@ const Profile = () => {
         className="overflow-hidden border border-secondary border-4 rounded-circle"
       >
         <img
+          className="cc-img-fluid"
           src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476103/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Mask_Group_45_azkyby.png"
           alt="avatar"
         />
