@@ -6,7 +6,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="bg-blue">
       <div className="container">
         <footer className="py-20 text-white">
           <div className="row">
@@ -28,27 +28,27 @@ const Footer = () => {
               </div>
               <ul className="nav flex-column fs-sm mt-5 gap-2">
                 <li className="nav-item mb-2">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/frontend">
                     Front End Development
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/mobile-development">
                     Android Development
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/ui-ux">
                     UI/UX Design
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/fullstack">
                     Full Stack development
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/data-science">
                     Data Science
                   </Link>
                 </li>
@@ -58,14 +58,14 @@ const Footer = () => {
             <div className="col-12 col-lg-2 my-12 my-lg-0">
               <div>
                 <h5 className="fs-md fw-bolder py-4">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/about-us">
                     About Us
                   </Link>
                 </h5>
               </div>
               <div>
                 <h5 className="fs-md fw-bolder py-3">
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/contact">
                     Contact
                   </Link>
                 </h5>

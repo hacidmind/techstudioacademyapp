@@ -3,6 +3,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import techimage from "../Icons&Images/TechStudioImages/Image129.png";
 import Button from "../components/buttons/Button";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg bg-blue fixed-top">
@@ -27,7 +28,7 @@ const Navbar = () => (
         className="collapse navbar-collapse d-lg-flex justify-content-between"
         id="navbarNavAltMarkup"
       >
-        <div className="navbar-nav text-center gap-12 ms-lg-40 fs-sm">
+        <div className="navbar-nav align-items-center text-center gap-12 ms-lg-40 fs-sm">
           <Link
             className="nav-link active text-white"
             aria-current="page"
@@ -35,18 +36,46 @@ const Navbar = () => (
           >
             About Us
           </Link>
-          <Link className="nav-link text-white">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              data-bs-container="body"
-              data-bs-toggle="popover"
-              data-bs-placement="bottom"
-              data-bs-content="Bottom popover"
+          <div className="dropdown">
+            <div
+              className="dropdown-toggle btn fs-sm text-white border-0"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              Popover on bottom
-            </button>
-          </Link>
+              Courses
+              <FaChevronDown className="ms-2 fs-sm" />
+            </div>
+            <ul className="dropdown-menu mt-5">
+              <li className="my-2">
+                <Link className="dropdown-item fs-sm py-2" to="/frontend">
+                  Frontend
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link className="dropdown-item fs-sm py-2" to="/data-science">
+                  Data Science
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link className="dropdown-item fs-sm py-2" to="/fullstack">
+                  Fullstack
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link
+                  className="dropdown-item fs-sm py-2"
+                  to="/mobile-development"
+                >
+                  Mobile Development
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link className="dropdown-item" to="/ui-ux">
+                  UI/UX
+                </Link>
+              </li>
+            </ul>
+          </div>
           <Link className="nav-link text-white" to="/about">
             Employers
           </Link>
@@ -62,7 +91,7 @@ const Navbar = () => (
           />
           <Button
             name="Sign Up"
-            type={`btn btn-outline px-8 border-0 fs-sm`}
+            type={`btn btn-outline px-8 border-0 text-white fs-sm`}
             height={`40px`}
           />
         </div>
