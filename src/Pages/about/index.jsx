@@ -53,7 +53,7 @@ const About = () => {
             professional web developers and software engineer.
             <br />
             <br />
-            You’ll be provided with constant power and internet supply to make
+            You’ll be provided with constant power to make
             you focus on the job at hand
           </p>
         </article>
