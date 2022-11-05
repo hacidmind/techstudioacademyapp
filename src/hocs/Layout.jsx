@@ -3,11 +3,11 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
 const Layout = (props) => (
-  <div>
+  <main className="">
     <Navbar />
     {props.children}
     <Footer />
-  </div>
+  </main>
 );
 
 export default Layout;

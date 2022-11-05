@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       style={{ height: `calc(100vh - 60px)` }}
-      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container"
+      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container px-10"
     >
       <div className="text-white text-center text-lg-start">
         <h1 className="fs-5xl fw-bold">

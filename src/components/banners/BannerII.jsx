@@ -23,7 +23,7 @@ const BannerII = ({ children }) => {
         />
       </div>
       <img
-        className="position-absolute top-100 start-100 translate-middle d-none d-xl-block"
+        className="position-absolute top-100 start-100 translate-middle d-none d-xxl-block"
         src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Rectangle_7475_gijnxw.png"
         alt="img"
       />

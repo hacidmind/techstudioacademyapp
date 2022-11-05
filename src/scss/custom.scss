@@ -29,6 +29,7 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $container-max-widths: (
+  xl: 1148px,
   xxl: 1248px,
 );
 

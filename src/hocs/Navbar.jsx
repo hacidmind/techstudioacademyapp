@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg bg-blue fixed-top">
-    <div className="container py-3">
+    <div className="container py-3 px-10">
       <Link className="navbar-brand" to="/">
         <div className="d-flex align-items-center gap-2">
           <img src={techimage} alt="logo" />

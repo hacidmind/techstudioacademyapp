@@ -20,7 +20,7 @@ const Home = () => {
       </main>
 
       <main className="position-relative mt-20 mt-lg-16 mb-xl-96">
-        <article className="container">
+        <article className="container px-10">
           <img
             className="d-none d-lg-block section_2_bg_img"
             style={imgStyle}
@@ -62,7 +62,7 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container mt-60 mb-52 px-0 px-lg-3">
+      <main className="container mt-60 mb-52 px-0 px-lg-10">
         <Banner>
           <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20 px-lg-72">
             <p className="text-start text-lg-center lh-lg">
@@ -75,7 +75,7 @@ const Home = () => {
         </Banner>
       </main>
 
-      <main className="container d-flex align-items-end justify-content-between mb-20 gap-32">
+      <main className="container d-flex align-items-end justify-content-between mb-20 gap-32 px-10">
         <article className="d-none d-lg-block">
           <div
             style={{ width: `40rem`, height: `40rem` }}
@@ -116,7 +116,7 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container">
+      <main className="container px-10">
         <article className="row flex-column-reverse flex-lg-row mb-52">
           <article
             className="d-flex align-items-start gap-10 mt-10 col-12 col-lg-6"
@@ -170,7 +170,7 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container mx-auto my-52 p-0 px-lg-3">
+      <main className="container mx-auto my-52 p-0 px-lg-10">
         <BannerII>
           <div className="ms-12 ms-lg-40 text-white py-20">
             <span>Try TechStudio</span>
