@@ -1,12 +1,12 @@
 import React from "react";
-import Illustration from "../Illustration";
+import Illustration from "../../components/Illustration";
 import Hero from "./Hero";
-import Banner from "../banners/Banner";
-import Profile from "../Profile";
-import Button from "../buttons/Button";
-import BannerII from "../banners/BannerII";
+import Banner from "../../components/banners/Banner";
+import Profile from "../../components/Profile";
+import Button from "../../components/buttons/Button";
+import BannerII from "../../components/banners/BannerII";
 
-const index = () => {
+const Home = () => {
   const imgStyle = {
     position: `absolute`,
     top: `5rem`,
@@ -187,4 +187,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;

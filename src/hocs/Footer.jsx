@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Footer.css";
+
 import { Link } from "react-router-dom";
 import techimage from "../Icons&Images/TechStudioImages/Image129.png";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";

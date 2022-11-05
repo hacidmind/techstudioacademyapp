@@ -1,0 +1,41 @@
+.bg-contact {
+    background-image: url("../Icons&Images/TechStudioImages/contactbg.png");
+    height: 300px;
+    width: 100%;
+}
+
+.contact-h1 {
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0px;
+    color: #1F2666;
+    opacity: 1;
+}
+
+.contact-p {
+    color: #1F2666;
+    font-weight: bold;
+}
+
+.sm {
+    padding: 10px 100px;
+}
+
+@media (min-width: 768px) {
+
+    .contact-container {
+        margin-top: 80px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    h1 {
+        /* color: red; */
+    }
+
+
+}

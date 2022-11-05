@@ -2,7 +2,7 @@ import React from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import techimage from "../Icons&Images/TechStudioImages/Image129.png";
-import Button from "./buttons/Button";
+import Button from "../components/buttons/Button";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg bg-blue fixed-top">
@@ -31,17 +31,26 @@ const Navbar = () => (
           <Link
             className="nav-link active text-white"
             aria-current="page"
-            to="/"
+            to="/about-us"
           >
             About Us
           </Link>
-          <Link className="nav-link text-white" to="/about">
-            Courses*
+          <Link className="nav-link text-white">
+            <button
+              type="button"
+              className="btn btn-secondary"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="Bottom popover"
+            >
+              Popover on bottom
+            </button>
           </Link>
           <Link className="nav-link text-white" to="/about">
             Employers
           </Link>
-          <Link className="nav-link text-white" to="/about">
+          <Link className="nav-link text-white" to="/contact">
             Contact Us
           </Link>
         </div>
