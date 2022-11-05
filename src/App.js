@@ -1,15 +1,15 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home";
-import About from "./Pages/About";
+
 import Layout from "./hocs/Layout";
-import ErrPage from "./components/ErrPage";
-import Frontend from "./Pages/Frontend";
-import DataScience from "./Pages/DataScience";
-import Fullstack from "./Pages/Fullstack";
-import MobileDev from "./Pages/MobileDev";
+import Home from "./Pages/home";
+import About from "./Pages/about";
+import Frontend from "./Pages/frontend";
+import DataScience from "./Pages/dataScience";
+import MobileDev from "./Pages/mobileDev";
 import UIUX from "./Pages/UIUX";
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/contact";
+import Fullstack from "./Pages/fullstack";
+import ErrPage from "./Pages/404/ErrPage";
 
 const App = () => {
   return (
