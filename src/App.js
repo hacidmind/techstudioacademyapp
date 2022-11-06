@@ -10,6 +10,7 @@ import UIUX from "./Pages/UIUX";
 import Contact from "./Pages/contact";
 import Fullstack from "./Pages/fullstack";
 import ErrPage from "./Pages/404/ErrPage";
+import Olt from "./Pages/ourlearningtrack";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route exact path="/mobile-development" element={<MobileDev />} />
             <Route exact path="/ui-ux" element={<UIUX />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/olt" element={<Olt />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>

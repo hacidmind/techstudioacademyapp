@@ -36,7 +36,7 @@ const About = () => {
     },
   ];
   return (
-    <main class="container text-center mt-5 about">
+    <main class="container text-center mt-5 about m-top">
       <section className="about__section-1">
         <article className="section1-article1">
           <h6>KNOW US MORE</h6>
@@ -61,7 +61,7 @@ const About = () => {
           <img src={Images.aboutHi} alt="alt" />
         </article>
       </section>
-      <section className="about__section-2">
+      <section className="about__section-2 mt-lg-5">
         <img src={Images.aboutGroup} alt="group" />
       </section>
       <section className="about__section-3">
