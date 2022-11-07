@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="gap-10 d-flex justify-content-center justify-content-lg-start my-20 my-lg-0">
           <Button name={`Take a course`} type={`btn btn-primary px-7 py-2_5`} />
           <Button
-            name={`Take a course`}
+            name={`Sign In`}
             type={`btn btn-outline text-white border border-white px-7`}
           />
         </div>
