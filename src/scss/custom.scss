@@ -2,6 +2,8 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 // 2. Include any default variable overrides here
 $primary: #0266f4;
 $info: #5a9eff;
@@ -107,6 +109,9 @@ $font-sizes: (
 @import "./courses.scss";
 @import "./errPage.scss";
 @import "./getStarted.scss";
+@import "./olt.scss";
+@import "./page14.scss";
+@import "./helper.scss";
 
 // OVERIDES
 .dropdown-toggle::after {
@@ -128,6 +133,9 @@ $font-sizes: (
     font-size: calc(7px + 0.390625vw);
   }
 }
+
+
+
 
 a {
   text-decoration: none !important;

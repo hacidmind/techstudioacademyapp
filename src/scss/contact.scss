@@ -15,6 +15,11 @@
 }
 
 // Second Component
+.contact-h2 {
+    color: #1F2666;
+    font-weight: bold;
+}
+
 .contact-p {
     color: #1F2666;
     font-weight: bold;
@@ -34,8 +39,8 @@
 
 @media (max-width: 720px) {
 
-    h1 {
-        /* color: red; */
+    .contact-component-3{
+        text-align: center!important;
     }
 
 

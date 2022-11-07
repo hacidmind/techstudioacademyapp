@@ -11,7 +11,7 @@ const Courses = ({
   courseThread,
 }) => {
   return (
-    <main className="container courses">
+    <main className="container courses m-t-50">
       <section className="courses__section-1">
         <article>
           <h2>{courseTitle}</h2>

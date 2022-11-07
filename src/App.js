@@ -11,6 +11,7 @@ import Contact from "./Pages/contact";
 import Fullstack from "./Pages/fullstack";
 import ErrPage from "./Pages/404/ErrPage";
 import Olt from "./Pages/ourlearningtrack";
+import Page14 from "./Pages/page14";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route exact path="/ui-ux" element={<UIUX />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/olt" element={<Olt />} />
+            <Route exact path="/page14" element={<Page14 />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>

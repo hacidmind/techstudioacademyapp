@@ -1,5 +1,5 @@
 import React from "react";
-import nig from "../../Icons&Images/TechStudioImages/nigeria.png";
+import { Images } from "../../Icons&Images";
 
 const Contact = () => {
   return (
@@ -17,14 +17,13 @@ const Contact = () => {
         </header>
       </div>
 
-
       {/* Second Component */}
-      <div className="container">
+      <div className="container m-b-20">
         <div className="row">
           <div className="col-md-5">
           <div className="container">
-            <form className=" m-3 p-5 shadow-lg p-3 mb-5 bg-body rounded">
-              <div class="mb-3">
+            <form className=" m-5 p-5 shadow-lg p-3 mb-5 bg-body rounded lh-lg" method="">
+              <div class="m-5 pt-5">
                 <label for="exampleFormControlInput1" class="form-label">
                   Full Name
                 </label>
@@ -35,7 +34,7 @@ const Contact = () => {
                   placeholder="Firstname Lastname"
                 />
               </div>
-              <div class="mb-3">
+              <div class="m-5">
                 <label for="exampleFormControlInput1" class="form-label">
                   Email Address
                 </label>
@@ -46,7 +45,7 @@ const Contact = () => {
                   placeholder="email@email.com"
                 />
               </div>
-              <div className="mb-3">
+              <div className="m-5">
                 <label for="exampleFormControlInput1" class="form-label">
                   Subject
                 </label>
@@ -57,32 +56,32 @@ const Contact = () => {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="mb-3">
+              <div class="m-5">
                 <label for="exampleFormControlTextarea1" class="form-label">
                   Message or Questions
                 </label>
                 <textarea
                   className="form-control"
-                  id="exampleFormControlTextarea1"
                   rows="6"
                   placeholder="Type your message questions or inquiries here"
                 ></textarea>
               </div>
-              <div className="text-center">
+              <div className="text-center m-t-20 m-b-30">
                 <button className="btn btn-primary sm">Send Message</button>
               </div>
             </form>
             </div>
           </div>
-          <div className="col-md-6">
+
+          <div className="col-md-6 contact-component-3 text-sm-center text-md-start">
             <div className="w-md-75 contact-container ">
-              <h1 className="contact-h1 ">Our Office Location</h1>
+              <h2 className="contact-h2 blue">Our Office Location</h2>
               <p>Where the magic happens</p>
               <div className="row">
-                <div className="col-md-3">
-                  <img src={nig} alt="" />
+                <div className="col-md-3 text-sm-center">
+                  <img src={Images.nig} alt="" />
                 </div>
-                <div className="col-md-9 text-start contact-">
+                <div className="col-md-9  contact-component-3">
                   <p className="contact-p">Lagos, Nigeria</p>
                   <p>
                     3 Ogunlesi Street <br />
@@ -93,8 +92,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
+
+      
     </div>
   );
 };
