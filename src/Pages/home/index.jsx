@@ -27,7 +27,7 @@ const Home = () => {
             alt="img"
             src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Mask_Group_91_sm51se.png"
           />
-          <h2 className="text-dark fw-bolder fs-3xl text-center text-lg-start">
+          <h2 className="text-dark fs-3xl text-center text-lg-start f-s-32 f-w-800">
             Why choose Techstudio?
           </h2>
           <article className="d-flex justify-content-end">
@@ -65,10 +65,10 @@ const Home = () => {
       <main className="container mt-60 mb-52 px-0 px-lg-10">
         <Banner>
           <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20 px-lg-72">
-            <p className="text-start text-lg-center lh-lg">
+            <p className="text-start text-lg-center lh-lg f-s-16">
               I have been trying to figure out a way to kickstart my career in
-              tech to no avail. I tried self tutorial, still nothing. When I
-              tried techstudio 10 weeks training, my story changed for better
+              tech to no avail. I <br /> tried self tutorial, still nothing. When I
+              tried techstudio 10 weeks training, my story <br /> changed for better
             </p>
             <Profile />
           </div>
@@ -99,13 +99,13 @@ const Home = () => {
           </div>
         </article>
         <article className="pt-20 pb-8 px-14">
-          <h4 className="text-info fs-lg">TAKE A COURSE</h4>
-          <h1 className="text-dark fw-bolder my-7">
-            Learn a skill to elevate your earning potential
+          <h4 className="text-info fs-lg m-b-16">TAKE A COURSE</h4>
+          <h1 className="text-dark fw-bolder home-color-2">
+            Learn a skill to elevate <br /> your earning potential
           </h1>
-          <p className="mb-32">
-            Our Accelerator program is designed to connect the most ambitious
-            university graduates with long-term employment and help you launch
+          <p className="m-b-65 m-t-20 text-cyan f-s-16 home-letter-spacing" style={{opacity: 0.85}}>
+            Our Accelerator program is designed to connect the most <br /> ambitious
+            university graduates with long-term employment and <br /> help you launch
             your career in the tech space.
           </p>
           <Button
@@ -129,31 +129,31 @@ const Home = () => {
                 alt="bullet"
               />
             </div>
-            <div className="d-flex flex-column justify-content-between gap-20">
+            <div className="d-flex flex-column justify-content-between gap-20" >
               <div>
-                <h3 className="fs-2xl mb-5 text-dark fw-bolder">Apply</h3>
-                <p className="mb-0">
+                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">Apply</h3>
+                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
                   Apply for any of our learning tracks. Techstudio offers
-                  diverse range of learning courses designed to give you the
-                  skills needed to grow professionally.
+                  diverse <br /> range of learning courses designed to give you the
+                  skills needed <br /> to grow professionally.
                 </p>
               </div>
-              <div className="my-1">
-                <h3 className="fs-2xl mb-5 text-dark fw-bolder">
+              <div className="my-1 m-b-25">
+                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
                   Get Admitted
                 </h3>
-                <p className="mb-0">
+                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
                   Receive an admission offer and reserve your spot in the
-                  program. You will complete the required KYC procedures
+                  program. <br /> You will complete the required KYC procedures
                 </p>
               </div>
               <div>
-                <h3 className="fs-2xl mb-5 text-dark fw-bolder">
+                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
                   Start classes
                 </h3>
-                <p className="mb-0">
-                  Attend your first class, partake in group projects, and 1:1
-                  sessions. Our team will keep an eye on your growth even even
+                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
+                  Attend your first class, partake in group projects, and 1:1 <br />
+                  sessions. Our team will keep an eye on your growth even <br />
                   after the training
                 </p>
               </div>

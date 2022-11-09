@@ -2,7 +2,7 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik&display=swap');
 
 // 2. Include any default variable overrides here
 $primary: #0266f4;
@@ -25,6 +25,8 @@ $theme-colors: (
 // Create your own map
 $custom-colors: (
   "blue": #1f2666,
+  "cyan": #1C1D1D,
+  "another-blue": #0266F4,
 );
 
 // Merge the maps
@@ -185,4 +187,27 @@ a {
     width: initial;
     filter: blur(0);
   }
+}
+
+
+.home-color-2{
+font-family: "Open Sans", sans-serif;
+font-size: 36px;
+font-weight: 800;
+letter-spacing: 0px;
+color: #1A1A1A;
+opacity: 1;
+}
+
+.hero-btn-2{
+  width: 165px !important;
+}
+
+.home-color-3{
+  font-family: 'Rubik', sans-serif;
+  color: #292929;
+}
+
+.home-letter-spacing{
+  letter-spacing: 0;
 }

@@ -153,7 +153,8 @@
 
 
 import React from 'react';
-// import { Images } from "../../Icons&Images";
+import { Link } from 'react-router-dom';
+import { Images } from "../../Icons&Images";
 // import '../../scss/olt.scss';
 import '../../scss/helper.scss';
 const Olt = () => {
@@ -161,37 +162,85 @@ const Olt = () => {
 
         <div className='m-t-100 m-b-200' >
 
-            <div class="container mt-3">
-                <h2>Toggleable Pills</h2>
-                <br />
+            <div class="mt-3">
+                <div class="container">
+                    <h2>Our Learning Tracks</h2>
+
+                    <p>Select any of our courses to get started on your tech journey</p>
+                    <br />
                     {/* <!-- Nav pills --> */}
-                    <ul class="nav nav-pills" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+                    <ul className="nav nav-pills" role="tablist">
+                        <li className="nav-item">
+                            <Link className="nav-link active" data-bs-toggle="pill" to="#home">UI/UX Design</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" data-bs-toggle="pill" to="#menu1">Graphics Design</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" data-bs-toggle="pill" to="#menu2">Android Development</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" data-bs-toggle="pill" to="#menu3"> Front End Development</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" data-bs-toggle="pill" to="#menu4">Back End Development</Link>
                         </li>
                     </ul>
+                </div>
 
-                    {/* <!-- Tab panes --> */}
-                    <div class="tab-content">
-                        <div id="home" class="container tab-pane active"><br />
-                            <h3>HOME</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                {/* <!-- Tab panes --> */}
+                <div className="tab-content olt-bg-blue">
+                    <div id="home" className="container tab-pane active"><br />
+                        <div className="">
+                            hello
                         </div>
-                        <div id="menu1" class="container tab-pane fade"><br />
-                            <h3>Menu 1</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu2" class="container tab-pane fade"><br />
-                            <h3>Menu 2</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+                        <div class="row gx-1">
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="p-3  "><img src={Images.front} alt="" className='w-90' /></div>
+                            </div>
+                            <div class="col-lg-8 col-sm-12">
+                                <div class="p-3 ">
+                                    <h4 className='text-color f-w-700'>Front End Development</h4>
+                                    <p className='f-s-12 text-grey p-t-10'>
+                                        You’ll participate in a wide-range of projects where you’ll
+                                        gain hands-on experience with the fundamentals of development.
+                                        This program is designed to equip professionals with the competencies
+                                        required to enable you sail through the tech space and take you
+                                        through a hands-on learning experience to build platforms.
+                                    </p>
+                                    <div className='m-t-35'>
+                                        <img src={Images.cal} alt="" width={18} /><span className='p-l-10 f-s-14 f-w-600'>10 weeks</span>
+                                        <img src={Images.IconClock} alt="" width={18} className='m-l-30' /><span className='p-l-10 f-s-14 f-w-600'>Starting august 2021</span>
+
+                                    </div>
+                                    <div className="row m-t-40">
+                                        <div className="col"><h4 className='f-w-700 '>&#8358;150,000.00</h4></div>
+                                        <div className="col"><button type="button" class="btn btn-enroll text-white">Enroll</button></div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <div id="menu1" className="container tab-pane fade"><br />
+                                <h3>Menu 1</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div id="menu2" className="container tab-pane fade"><br />
+                                <h3>Menu 2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                            <div id="menu3" className="container tab-pane fade"><br />
+                                <h3>Menu 2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
 
 
