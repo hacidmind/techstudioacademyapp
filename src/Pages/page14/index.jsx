@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import '../../scss/page14.scss';
 import { Images } from "../../Icons&Images";
 
