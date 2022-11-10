@@ -61,10 +61,68 @@
   --bs-nav-link-hover-color: #1F2666;
 }
 
-.olt-bg-blue{
+.olt-bg-blue {
   background-image: url('../Icons&Images/TechStudioImages/Rectangle\ 7792.png');
   // height: 50%;
   width: 100%;
   padding: 213px 0px;
   overflow-x: hidden !important;
+}
+
+.olt-p {
+  opacity: 0.8;
+}
+
+.olt-container {
+  width: 95%;
+}
+
+.olt-comp-4-b {
+  padding-right: 50px;
+}
+
+.olt-comp-4 button {
+  margin-top: -30px;
+}
+
+.olt-comp-3 {
+  font-family: 'Rubik', sans-serif;
+  color: #130019;
+}
+
+.btn-enroll {
+  padding: 13px 58px;
+  border-radius: 8px;
+}
+
+@media (max-width: 991.98px) {
+
+  .olt-container {
+    width: 100%;
+  }
+
+  .olt-comp-3 {
+    text-align: center;
+  }
+
+  .olt-comp-4 {
+    text-align: center;
+  }
+
+  .olt-comp-4-b {
+    padding-right: 2px;
+    text-align: center;
+  }
+
+
+
+}
+
+@media (max-width: 425px) {
+  .olt-comp{
+    text-align: center !important;
+  }
+  .olt-comp-4 button {
+    padding: 20px 40vw !important;
+  }
 }

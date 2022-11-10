@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../../components/buttons/Button";
+import { Link } from "react-router-dom";
+// import Button from "../../components/buttons/Button";
 
 const Hero = () => {
   return (
@@ -16,11 +17,13 @@ const Hero = () => {
           of tech
         </p>
         <div className="gap-10 d-flex justify-content-center justify-content-lg-start my-20 my-lg-0">
-          <Button name={`Take a course`} type={`btn btn-primary px-7 py-2_5 f-s-16`} />
-          <Button
+          {/* <Button name={`Take a course`} type={`btn btn-primary px-7 py-2_5 f-s-16`} /> */}
+          {/* <Button
             name={`Log In`}
             type={`btn btn-outline text-white border border-white px-7 f-s-16 hero-btn-2`}
-          />
+          /> */}
+          <Link to="/olt" className="btn btn-primary p-t-13 p-b-13 p-l-27 p-r-27 py-2_5 f-s-16">Take a course</Link>
+          <Link to="/" className="btn btn-outline p-t-13 p-b-13 p-l-27 p-r-27 text-white border border-white f-s-16 hero-btn-2">Log In</Link>
         </div>
       </div>
       <div className="d-flex align-items-center justify-content-center">

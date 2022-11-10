@@ -28,7 +28,7 @@ const App = () => {
             <Route exact path="/ui-ux" element={<UIUX />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/olt" element={<Olt />} />
-            <Route exact path="/page14" element={<Page14 />} />
+            <Route exact path="/employers" element={<Page14 />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>
