@@ -52,6 +52,7 @@ import icon01 from "./TechStudioImages/Group 25213.png";
 import icon02 from "./TechStudioImages/Group 25214.png";
 import icon03 from "./TechStudioImages/Group 25215.png";
 import logo from "./TechStudioImages/Image129.png";
+import meet from './TechStudioImages/meet.png';
 
 const Images = {
   ellipse,
@@ -107,7 +108,8 @@ const Images = {
   mongo,
   heroku,
   thread1,
-  thread2
+  thread2,
+  meet
 };
 
 export default Images;

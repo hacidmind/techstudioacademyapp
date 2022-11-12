@@ -1,4 +1,7 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 import "../css/about.css";
 import { Images } from "../Icons&Images";
@@ -37,6 +40,40 @@ const About = () => {
       text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
     },
   ];
+
+  const team = [
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+  ];
+
   return (
     <main class="container text-center mt-5 about">
       <section className="about__section-1">
@@ -64,7 +101,21 @@ const About = () => {
         </article>
       </section>
       <section className="about__section-2">
-        <img src={Images.aboutGroup} alt="group" />
+        <div>
+          <img src={Images.repeatGrid} alt="about1" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase1} alt="about1" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase2} alt="about2" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase3} alt="about3" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase4} alt="about 4" />
+        </div>
       </section>
       <section className="about__section-3">
         <h3>Driven by our core values</h3>
@@ -85,9 +136,19 @@ const About = () => {
         </article>
       </section>
       <section className="about__section-4">
-        <div>
-          <img src={Images.team} alt="team" />
-        </div>
+        <Row xs={1} md={3} className="g-4">
+          {team.map((val, idx) => (
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={val.img} />
+                <Card.Body>
+                  <Card.Title>{val.name}</Card.Title>
+                  <Card.Text>{val.role}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
       </section>
       <GetStarted />
     </main>
