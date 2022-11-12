@@ -11,23 +11,22 @@ const Olt = () => {
                     <h2 className='text-blue f-s-32 f-w-800'>Our Learning Tracks</h2>
 
                     <p className='f-s-14'>Select any of our courses to get started on your tech journey</p>
-                    <br />
                     {/* <!-- Nav pills --> */}
-                    <ul className="nav nav-pills m-t-56" role="tablist">
+                    <ul className="nav nav-pills m-t-56 olt-ul" role="tablist">
                         <li className="nav-item">
-                            <Link className="nav-link active" data-bs-toggle="pill" to="#home">UI/UX Design</Link>
+                            <Link className="nav-link olt-link active m-3" data-bs-toggle="pill" to="#home">UI/UX Design</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link btn btn-blue " data-bs-toggle="pill" to="#menu1">Graphics Design</Link>
+                            <Link className="nav-link random olt-link m-3" data-bs-toggle="pill" to="#menu1">Graphics Design</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link disabled" data-bs-toggle="pill" to="#menu2">Android Development</Link>
+                            <Link className="nav-link disabled olt-link m-3" data-bs-toggle="pill" to="#menu2">Android Development</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" data-bs-toggle="pill" to="#menu3"> Front End Development</Link>
+                            <Link className="nav-link olt-link m-3 d-block-md" data-bs-toggle="pill" to="#menu3"> Front End Development</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link disabled" data-bs-toggle="pill" to="#menu4">Back End Development</Link>
+                            <Link className="nav-link disabled olt-link m-3" data-bs-toggle="pill" to="#menu4">Back End Development</Link>
                         </li>
                     </ul>
                 </div>

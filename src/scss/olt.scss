@@ -1,50 +1,4 @@
-// .olt-parent{
-//     margin-top: 100px;
-// }
 
-// .open-bold{
-//     font-family:open-sans-bold ;
-//   }
-//   .open-light{
-//     font-family: open-sans-light;
-//   }
-//   .mycolor{
-//     color: #1F2666;
-//   }
-//   .mycolorbg{
-//     background-color: #1F2666;
-//   }
-//   .mygreybg{
-//     background-color: #F0EFEF;
-//   }
-//   .text-color1{
-//     color: #1C1D1D;
-//   }
-//   .text-color2{
-//     color: #F0EFEF;
-//   }
-//   .d-lg-none{
-//     display: none;;
-//   }
-//   .btn-enroll{
-//     background-color: #0266F4 !important;
-//     color: #fff;
-//     padding-left: 55px !important;
-//     padding-right: 55px !important;
-//     float: right;
-//   }
-//   .box-wrapper{
-//     box-shadow: 0px 3px 15px #0000001A;
-//     border: 1px solid #C4CDD5;
-//     border-radius: 8px;
-//     opacity: 1;
-//   }
-//   .main-bg{
-//     background-color: #DCE9FA;
-//   }
-//   .p-b-165{
-//     padding-bottom: 165px;
-//   }
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
@@ -75,14 +29,6 @@
 
 .olt-container {
   width: 95%;
-}
-
-.olt-comp-4-b {
-  padding-right: 50px;
-}
-
-.olt-comp-4 button {
-  margin-top: -30px;
 }
 
 .olt-comp-3 {
@@ -119,10 +65,41 @@
 }
 
 @media (max-width: 425px) {
-  .olt-comp{
-    text-align: center !important;
+  // .olt-comp{
+  //   text-align: center !important;
+  // }
+  // .olt-comp-4 button {
+  //   padding: 20px 40vw !important;
+  // }
+}
+
+@media (max-width: 768px) {
+  .btn-enroll {
+    padding: 10px 38px;
+    border-radius: 8px;
   }
-  .olt-comp-4 button {
-    padding: 20px 40vw !important;
+  .olt-h4{
+    text-align: center;
+  }
+  .olt-ul{
+    display: block !important;
   }
 }
+@media (min-width: 768px) {
+  .btn-enroll {
+    padding: 10px 38px;
+    border-radius: 8px;
+    margin-right: 20px !important;
+  }
+}
+
+.olt-link:link{
+  color: #130019 ;
+  background-color: #F0EFEF ;
+}
+
+
+
+// .olt-link:visited{
+//   color: olivedrab !important;
+// }

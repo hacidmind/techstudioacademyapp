@@ -10,8 +10,8 @@ const OltUiUx = () => {
                 </div>
                 <div className="col-lg-9 col-sm-12 text-cyan olt-comp">
                     <div className="p-t-10 ">
-                        <h4 className='f-w-600 f-s-22'>User Interface and User Experience Design</h4>
-                        <p className='f-s-14 p-t-10 olt-p'>
+                        <h4 className='f-w-600 f-s-22 olt-h4'>User Interface and User Experience Design</h4>
+                        <p className='f-s-14 p-t-10 olt-p olt-p'>
                             You’ll participate in a wide-range of design projects where you’ll gain hands-on experience with <br />
                             the fundamentals of design methodology. You’ll identify the problems, develop solutions, and <br />
                             create prototypes and wireframes using standard design tools including Figma and Balsamiq.
