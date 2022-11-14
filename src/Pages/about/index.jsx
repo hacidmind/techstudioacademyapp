@@ -3,9 +3,9 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-import "../css/about.css";
-import { Images } from "../Icons&Images";
-import GetStarted from "../components/GetStarted";
+import "../../scss/about.scss";
+import { Images } from "../../Icons&Images";
+import GetStarted from "../../components/GetStarted";
 
 const About = () => {
   const values = [
@@ -92,8 +92,8 @@ const About = () => {
             professional web developers and software engineer.
             <br />
             <br />
-            You’ll be provided with constant power to make
-            you focus on the job at hand
+            You’ll be provided with constant power to make you focus on the job
+            at hand
           </p>
         </article>
         <article className="section1-article2">
@@ -116,9 +116,6 @@ const About = () => {
         <div>
           <img src={Images.aboutShowCase4} alt="about 4" />
         </div>
-        </section>
-      <section className="about__section-2 mt-lg-5">
-        <img src={Images.aboutGroup} alt="group" />
       </section>
       <section className="about__section-3">
         <h3>Driven by our core values</h3>
@@ -155,7 +152,7 @@ const About = () => {
       </section>
       <GetStarted />
     </main>
-  )
+  );
 };
 
 export default About;
