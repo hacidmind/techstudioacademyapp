@@ -8,8 +8,14 @@
 $primary: #0266f4;
 $info: #5a9eff;
 $dark: #292929;
-// $body-bg: #000;
 $body-color: #979dad;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
 
 $theme-colors: (
   "primary": $primary,
@@ -21,7 +27,7 @@ $theme-colors: (
 $custom-colors: (
   "blue": #1f2666,
   "cyan": #1c1d1d,
-  "another-blue": #0266f4,
+  // "another-blue": #0266f4,
 );
 
 // Merge the maps
@@ -116,7 +122,14 @@ $font-sizes: (
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.5px;
 }
-
+// FLUID FONT FORMULAR ===========================================
+// font-size: calc(
+//   [minimum size] + ([maximum size] - [minimum size]) *
+//     (
+//       (100vw - [minimum viewport width]) /
+//         ([maximum viewport width] - [minimum viewport width])
+//     )
+// );==============================================================
 html {
   font-size: 14px;
   @media screen and (min-width: 320px) {

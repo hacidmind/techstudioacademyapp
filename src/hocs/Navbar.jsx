@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { useEffect } from "react";
 
 const Navbar = () => {
-  
+
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", () => {
       window.addEventListener("scroll", () => {
