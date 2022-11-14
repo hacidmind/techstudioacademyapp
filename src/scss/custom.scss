@@ -2,6 +2,8 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik&display=swap');
+
 // 2. Include any default variable overrides here
 $primary: #0266f4;
 $info: #5a9eff;
@@ -9,7 +11,29 @@ $dark: #292929;
 // $body-bg: #000;
 $body-color: #979dad;
 
+$theme-colors: (
+  "primary": $primary,
+  //   "secondary": $secondary,
+  //   "success": $success,
+  "info": $info,
+  //   "warning": $warning,
+  //   "danger": $danger,
+  //   "light": $light,
+  "dark": $dark,
+);
+
+// Create your own map
+$custom-colors: (
+  "blue": #1f2666,
+  "cyan": #1C1D1D,
+  "another-blue": #0266F4,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 $container-max-widths: (
+  xl: 1148px,
   xxl: 1248px,
 );
 
@@ -56,7 +80,7 @@ $font-sizes: (
   lg: "1.125rem",
   xl: "1.25rem",
   "2xl": "1.5rem",
-  "3xl": "1.875rem",
+  "3xl": "2rem",
   "4xl": "2.25rem",
   "5xl": "3rem",
   "6xl": "3.75rem",
@@ -64,6 +88,7 @@ $font-sizes: (
   "8xl": "6rem",
   "9xl": "8rem",
 );
+//
 // $display-font-family: "Open Sans", sans-serif;
 
 // 3. Include remainder of required Bootstrap stylesheets
@@ -71,17 +96,32 @@ $font-sizes: (
 @import "../../node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
-// @import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/popover";
 // @import "../../node_modules/bootstrap/scss/reboot";
 // @import "../../node_modules/bootstrap/scss/type";
 // @import "../../node_modules/bootstrap/scss/images";
 // @import "../../node_modules/bootstrap/scss/containers";
 // @import "../../node_modules/bootstrap/scss/grid";
-
 /* finally, import Bootstrap to set the changes! */
 @import "bootstrap";
 
+// local scss file
+@import "./about.scss";
+@import "./contact.scss";
+@import "./courses.scss";
+@import "./errPage.scss";
+@import "./getStarted.scss";
+@import "./olt.scss";
+@import "./page14.scss";
+@import "./helper.scss";
+
+// OVERIDES
+.dropdown-toggle::after {
+  display: none;
+}
+
 // 5. Add additional custom code here
+
 * {
   padding: 0;
   margin: 0;
@@ -89,11 +129,16 @@ $font-sizes: (
   text-decoration: none;
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: 1.5px;
 
   @media screen and (min-width: 48em) {
     font-size: calc(7px + 0.390625vw);
   }
 }
+
+
+
+
 a {
   text-decoration: none !important;
 }
@@ -111,4 +156,58 @@ a {
   background-size: cover;
   background-position: center;
   object-fit: cover;
+}
+
+.section-2,
+.illustration_3 {
+  @media screen and (min-width: 992px) {
+    width: 60%;
+  }
+}
+
+.bannerI,
+.bannerII {
+  @media screen and (min-width: 992px) {
+    height: 25.25rem;
+    border-radius: 16px;
+  }
+}
+
+.hero_img {
+  width: 80%;
+  @media screen and (min-width: 992px) {
+    width: 100%;
+  }
+}
+
+.section_2_bg_img {
+  width: 50%;
+  filter: blur(5px);
+  @media screen and (min-width: 1200px) {
+    width: initial;
+    filter: blur(0);
+  }
+}
+
+
+.home-color-2{
+font-family: "Open Sans", sans-serif;
+font-size: 36px;
+font-weight: 800;
+letter-spacing: 0px;
+color: #1A1A1A;
+opacity: 1;
+}
+
+.hero-btn-2{
+  width: 165px !important;
+}
+
+.home-color-3{
+  font-family: 'Rubik', sans-serif;
+  color: #292929;
+}
+
+.home-letter-spacing{
+  letter-spacing: 0;
 }
