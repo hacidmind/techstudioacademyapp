@@ -2,10 +2,11 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
-import "../../scss/about.scss";
+import Button from "../../components/buttons/Button";
+import BannerII from "../../components/banners/BannerII";
+// import "../../scss/about.scss";
 import { Images } from "../../Icons&Images";
-import GetStarted from "../../components/GetStarted";
+// import GetStarted from "../../components/GetStarted";
 
 const About = () => {
   const values = [
@@ -139,7 +140,7 @@ const About = () => {
         <Row xs={1} md={3} className="g-4">
           {team.map((val, idx) => (
             <Col>
-              <Card>
+              <Card className="border-0">
                 <Card.Img variant="top" src={val.img} />
                 <Card.Body>
                   <Card.Title>{val.name}</Card.Title>
@@ -150,7 +151,20 @@ const About = () => {
           ))}
         </Row>
       </section>
-      <GetStarted />
+{/* BANNER COMPONENT */}
+      <main className="container mx-auto my-52 p-0 px-lg-10">
+        <BannerII>
+          <div className="ms-12 ms-lg-40 text-white py-20">
+            <span>Try TechStudio</span>
+            <h3 className="mt-7 fw-bolder">Get started with Techstudio</h3>
+            <Button
+              type={`btn btn-primary px-16`}
+              name={`Get Started`}
+              height={`40px`}
+            />
+          </div>
+        </BannerII>
+      </main>
     </main>
   );
 };

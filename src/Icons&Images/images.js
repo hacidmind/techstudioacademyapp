@@ -52,6 +52,7 @@ import mongo from "./TechStudioImages/Mask Group 84.png";
 import heroku from "./TechStudioImages/Mask Group 86.png";
 import Group182 from "./TechStudioImages/Group 182.png";
 import thread from "./TechStudioImages/Group 25374.png";
+import threadDataScience from "./TechStudioImages/Group 25375.png";
 import thread1 from "./TechStudioImages/thread1.png";
 import Group25353 from "./TechStudioImages/Group 25353.png";
 import Group25354 from "./TechStudioImages/Group 25354.png";
@@ -72,6 +73,7 @@ import justify from './TechStudioIcons/justify icon1.jpg';
 import Bold from './TechStudioIcons/Bold icon1.jpg';
 
 const Images = {
+  threadDataScience,
   nig,
   RepeatGrid47,
   noun_coding_3152169,

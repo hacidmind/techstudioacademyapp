@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import '../../scss/page15.scss';
+import React from 'react';
+// import React, {useState} from 'react';
+// import '../../scss/page15.scss';
 import { Images } from "../../Icons&Images";
 const page15 = () => {
-  let styleElement =  document.querySelector('.inp_des')
+  // let styleElement =  document.querySelector('.inp_des')
   const italics = ()=>{
       console.log("italics clicked");
 

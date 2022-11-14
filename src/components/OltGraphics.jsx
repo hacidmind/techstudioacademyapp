@@ -3,19 +3,18 @@ import { Images } from '../Icons&Images';
 
 const OltGraphics = () => {
     return (
-        <div>
             <div className='container '>
-                <div className="row gx-1 bg-white p-t-36 p-b-71 olt-container">
+                <div className="row gx-1 bg-white pt-4 p-b-71 olt-container">
                     <div className="col-lg-3 col-sm-12">
                         <img src={Images.graphic} alt="" className='img-fluid' />
                     </div>
                     <div className="col-lg-9 col-sm-12 text-cyan olt-comp">
                         <div className="p-t-10 ">
-                            <h4 className='f-w-600 f-s-22'>Graphics Design</h4>
+                            <h4 className='f-w-600 f-s-22 olt-h4'>Graphics Design</h4>
                             <p className='f-s-14 p-t-10 olt-p'>
-                            You’ll participate in a wide-range of design projects where you’ll gain hands-on experience with <br />
-                             the fundamentals of design methodology. You will gain industry knowledge on how to create illustrations, <br />
-                              edit images using tools like Adobe illustrator, photoshop and Corel Draw
+                                You’ll participate in a wide-range of design projects where you’ll gain hands-on experience with <br />
+                                the fundamentals of design methodology. You will gain industry knowledge on how to create <br />
+                                illustrations, edit images using tools like Adobe illustrator, photoshop and Corel Draw
                             </p>
                             <div className="row m-t-30 olt-comp-3">
                                 <div className="col-md-2">
@@ -33,7 +32,6 @@ const OltGraphics = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

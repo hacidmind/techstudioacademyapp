@@ -3,7 +3,7 @@ import { Images } from '../Icons&Images';
 
 const OltUiUx = () => {
     return (
-        <div className='container '>
+        <div className='container'>
             <div className="row gx-1 bg-white pt-4 p-b-71 olt-container">
                 <div className="col-lg-3 col-sm-12">
                     <img src={Images.ui} alt="" className='img-fluid' />

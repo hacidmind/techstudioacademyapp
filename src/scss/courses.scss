@@ -137,17 +137,19 @@
 
 .article-content > p {
   color: #1a1a1a;
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .article-content > span {
   color: #1c1d1d;
   opacity: 85%;
-  font-size: 1rem;
-  max-width: 45.625rem;
+  // font-size: 1rem;
+  // max-width: 45.625rem;
   position: absolute;
   left: 30%;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -201,17 +203,19 @@
 
   .article-content > p {
     color: #1a1a1a;
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
     font-weight: bold;
+  letter-spacing: 1px;
   }
 
   .article-content > span {
     color: #1c1d1d;
     opacity: 85%;
-    font-size: 1rem;
-    max-width: 45.625rem;
+    // font-size: 1rem;
+    // max-width: 45.625rem;
     position: relative;
     left: 0;
+  letter-spacing: 1px;
   }
 }
 
