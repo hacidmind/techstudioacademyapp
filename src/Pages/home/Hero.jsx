@@ -9,8 +9,9 @@ const Hero = () => {
       className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container px-7 px-xl-3"
     >
       <div className="text-white text-center text-lg-start ">
-        <h1 className="fs-4xl fw-bold">
-          Your Dream Tech <br /> Career Starts Here
+        <h1 className="fs-4xl fw-bolder">
+          Your Dream Tech <br className="d-none d-xl-block" /> Career Starts
+          Here
         </h1>
         <p className="my-8 m-b-50">
           Techstudio offers graduates a path to a fulfilling career in the world

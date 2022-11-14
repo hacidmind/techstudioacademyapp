@@ -98,13 +98,13 @@ const Home = () => {
           </div>
         </article>
         <article className="mt-14">
-          <h4 className="text-info fs-lg m-b-16">TAKE A COURSE</h4>
+          <h4 className="text-info fs-sm fw-semibold">TAKE A COURSE</h4>
           <h1 className="text-dark fw-bolder home-color-2 mt-4 mb-6">
             Learn a skill to elevate <br className="d-none d-lg-block" /> your
             earning potential
           </h1>
           <p
-            className="m-b-65 m-t-20 text-cyan f-s-16 home-letter-spacing mb-16"
+            className="text-cyan home-letter-spacing mb-16"
             style={{ opacity: 0.85 }}
           >
             Our Accelerator program is designed to connect the most{" "}
@@ -123,7 +123,7 @@ const Home = () => {
       <main className="container px-10">
         <article className="row flex-column-reverse flex-lg-row mb-52">
           <article
-            className="d-flex align-items-start gap-10 mt-10 col-12 col-lg-6"
+            className="d-flex align-items-start gap-xl-10 mt-10 col-12 col-lg-6"
             style={{ height: `40rem` }}
           >
             <div>
@@ -135,7 +135,7 @@ const Home = () => {
             </div>
             <div className="d-flex flex-column justify-content-between gap-20">
               <div>
-                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">Apply</h3>
+                <h3 className="fs-2xl mb-5 text-dark fw-bolder">Apply</h3>
                 <p
                   className="mb-0 text-cyan f-s-16"
                   style={{ letterSpacing: 0 }}
@@ -146,7 +146,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="my-1 m-b-25">
-                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
+                <h3 className="fs-2xl mb-5 text-dark fw-bolder">
                   Get Admitted
                 </h3>
                 <p
@@ -158,7 +158,7 @@ const Home = () => {
                 </p>
               </div>
               <div>
-                <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
+                <h3 className="fs-2xl mb-5 text-dark fw-bolder">
                   Start classes
                 </h3>
                 <p
@@ -186,13 +186,13 @@ const Home = () => {
 
       <main className="container mx-auto my-52 p-0 px-lg-3">
         <BannerII>
-          <div className="ms-7 ms-lg-40 text-white py-20">
+          <div className="ms-7 ms-lg-40 text-white py-20 py-xl-0">
             <span>Try TechStudio</span>
-            <h3 className="mt-7 fw-bolder">Get started with Techstudio</h3>
+            <h3 className="mt-7 fw-bold">Get started with Techstudio</h3>
             <Button
               type={`btn btn-primary px-16`}
               name={`Get Started`}
-              height={`40px`}
+              height={`48px`}
             />
           </div>
         </BannerII>

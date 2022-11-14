@@ -2,7 +2,7 @@ import React from "react";
 
 const BannerII = ({ children }) => {
   const style = {
-    // height: `20.938rem`,
+    height: `20.938rem`,
   };
 
   return (
