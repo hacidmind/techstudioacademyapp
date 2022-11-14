@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       style={{ height: `calc(100vh - 60px)` }}
-      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container px-10"
+      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container"
     >
       <div className="text-white text-center text-lg-start">
         <h1 className="fs-5xl fw-bold f-s-44 f-w-800">
@@ -22,8 +22,18 @@ const Hero = () => {
             name={`Log In`}
             type={`btn btn-outline text-white border border-white px-7 f-s-16 hero-btn-2`}
           /> */}
-          <Link to="/olt" className="btn btn-primary p-t-13 p-b-13 p-l-27 p-r-27 py-2_5 f-s-16">Take a course</Link>
-          <Link to="/" className="btn btn-outline p-t-13 p-b-13 p-l-27 p-r-27 text-white border border-white f-s-16 hero-btn-2">Log In</Link>
+          <Link
+            to="/olt"
+            className="btn btn-primary p-t-13 p-b-13 p-l-27 p-r-27 py-2_5 f-s-16"
+          >
+            Take a course
+          </Link>
+          <Link
+            to="/"
+            className="btn btn-outline p-t-13 p-b-13 p-l-27 p-r-27 text-white border border-white f-s-16 hero-btn-2"
+          >
+            Log In
+          </Link>
         </div>
       </div>
       <div className="d-flex align-items-center justify-content-center">

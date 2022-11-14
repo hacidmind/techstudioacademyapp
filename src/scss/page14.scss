@@ -1,16 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-size: calc(10px + 0.390625vw);
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 1.5px;
 
-  @media screen and (min-width: 48em) {
-    font-size: calc(7px + 0.390625vw);
-  }
-}
 .page14{
     margin-top: 100px;
 }
@@ -22,8 +10,8 @@
     /* height: 14%; */
     margin-left: 85%;
     margin-bottom: 70%;
-   
-    
+
+
   }
   .form1{
     background-color: white;
@@ -31,25 +19,25 @@
     padding: 10%;
     position: relative;
     top: 5%;
-    
+
   }
   .formdiv{
     background-color: #DCE9FA;
     width: 45%;
     padding: 5%;
   }
-  
+
   .find_div{
     width: 50%;
     padding-top: 6%;
     /* background-color: #0266F4; */
-    
+
   }
   .find_div2{
     width: 50%;
     /* padding-top: 6%; */
     /* background-color: #0266F4; */
-    
+
   }
   .sec_1{
     height: 420px;
@@ -65,7 +53,7 @@
     border-radius: 5px;
     border: 1px solid grey;
     margin-block-end: 8%;
-  
+
   }
   .inputbtn{
     background-color: #0266F4;
@@ -101,8 +89,8 @@
   }
   .HTW2{
     color:  #1C1C1D;
-    margin-block-end: 5%; 
-    
+    margin-block-end: 5%;
+
   }
   .d_grid{
     display: grid;
@@ -110,7 +98,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10%;
     grid-row-gap: 3%;
-    
+
   }
   .sec_3{
     padding-bottom: 10%;
@@ -132,7 +120,7 @@
     padding: 5%;
     width: 35%;
   }
-  
+
 .Hire{
   margin-block-end: 10%;
 }
@@ -142,7 +130,7 @@
 @media (max-width: 992px) {}
 @media (max-width: 768px) {
   .sec_1{
-    display: block;  
+    display: block;
     margin-block-end: 35%;
   }
   .formdiv{

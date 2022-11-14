@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className="col-12 col-lg-3 text-white my-12 my-lg-0">
               <div>
-                <h5 className="fs-md fw-bolder py-4">Courses</h5>
+                <h5 className="fs-md fw-bolder py-2_5">Courses</h5>
               </div>
               <ul className="nav flex-column fs-sm mt-5 gap-2">
                 <li className="nav-item mb-2">
@@ -57,14 +57,14 @@ const Footer = () => {
 
             <div className="col-12 col-lg-2 my-12 my-lg-0">
               <div>
-                <h5 className="fs-md fw-bolder py-4">
+                <h5 className="fs-md fw-bolder py-2_5">
                   <Link className="text-white" to="/about-us">
                     About Us
                   </Link>
                 </h5>
               </div>
               <div>
-                <h5 className="fs-md fw-bolder py-3">
+                <h5 className="fs-md fw-bolder py-2_5">
                   <Link className="text-white" to="/contact">
                     Contact
                   </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="col-12 col-lg-4 text-white fw-bolder">
               <form>
                 <div>
-                  <h5 className="fs-md py-4">Subscribe to our newsletter</h5>
+                  <h5 className="fs-md py-2_5">Subscribe to our newsletter</h5>
                 </div>
 
                 <div className="input-group mb-3 bg-white rounded-3 p-1">

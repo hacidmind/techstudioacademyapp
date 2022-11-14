@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+// import Card from "react-bootstrap/Card";
+// import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
 import Button from "../../components/buttons/Button";
 import BannerII from "../../components/banners/BannerII";
 // import "../../scss/about.scss";
@@ -42,38 +42,38 @@ const About = () => {
     },
   ];
 
-  const team = [
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-    {
-      img: Images.meet,
-      name: "John Boyega",
-      role: "co-founder & CEO",
-    },
-  ];
+  // const team = [
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  //   {
+  //     img: Images.meet,
+  //     name: "John Boyega",
+  //     role: "co-founder & CEO",
+  //   },
+  // ];
 
   return (
     <main class="container text-center mt-5 about m-top">
@@ -137,7 +137,7 @@ const About = () => {
         </article>
       </section>
       <section className="about__section-4">
-        <Row xs={1} md={3} className="g-4">
+        {/* <Row xs={1} md={3} className="g-4">
           {team.map((val, idx) => (
             <Col>
               <Card className="border-0">
@@ -149,7 +149,7 @@ const About = () => {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row> */}
       </section>
 {/* BANNER COMPONENT */}
       <main className="container mx-auto my-52 p-0 px-lg-10">

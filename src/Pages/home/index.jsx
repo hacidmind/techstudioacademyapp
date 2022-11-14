@@ -19,7 +19,7 @@ const Home = () => {
         <Hero />
       </main>
 
-      <main className="position-relative mt-20 mt-lg-16 mb-xl-96">
+      <main className="position-relative mt-20 mt-lg-16">
         <article className="container px-10">
           <img
             className="d-none d-lg-block section_2_bg_img"
@@ -62,51 +62,52 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container mt-60 mb-52 px-0 px-lg-10">
+      <main className="container mt-60 mb-52">
         <Banner>
-          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20 px-lg-72">
+          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20">
             <p className="text-start text-lg-center lh-lg f-s-16">
               I have been trying to figure out a way to kickstart my career in
-              tech to no avail. I <br /> tried self tutorial, still nothing. When I
-              tried techstudio 10 weeks training, my story <br /> changed for better
+              tech to no avail. I <br /> tried self tutorial, still nothing.
+              When I tried techstudio 10 weeks training, my story <br /> changed
+              for better
             </p>
             <Profile />
           </div>
         </Banner>
       </main>
 
-      <main className="container d-flex align-items-end justify-content-between mb-20 gap-32 px-10">
+      <main className="container d-flex mb-20">
         <article className="d-none d-lg-block">
-          <div
-            style={{ width: `40rem`, height: `40rem` }}
-            className="position-relative"
-          >
+          <div style={{ width: `40rem` }} className="image-typing-hands">
             <img
-              className="position-absolute bottom-0 start-0"
-              src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Rectangle_7474_d48bdj.png"
-              alt="blue"
-            />
-            <img
-              className="position-absolute top-50 start-50 translate-middle"
+              className="image-one"
               src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476117/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/person-using-macbook-air-1181555_oo5fry.png"
               alt="img"
             />
             <img
-              className="position-absolute top-0 end-0 mt-10 me-2"
+              className="image-two"
+              src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Rectangle_7474_d48bdj.png"
+              alt="blue"
+            />
+            <img
+              className="image-three"
               src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476060/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Subtraction_3_pmoyw5.png"
               alt="border"
             />
           </div>
         </article>
-        <article className="pt-20 pb-8 px-14">
+        <article className="mt-14">
           <h4 className="text-info fs-lg m-b-16">TAKE A COURSE</h4>
-          <h1 className="text-dark fw-bolder home-color-2">
+          <h1 className="text-dark fw-bolder home-color-2 mt-4 mb-6">
             Learn a skill to elevate <br /> your earning potential
           </h1>
-          <p className="m-b-65 m-t-20 text-cyan f-s-16 home-letter-spacing" style={{opacity: 0.85}}>
-            Our Accelerator program is designed to connect the most <br /> ambitious
-            university graduates with long-term employment and <br /> help you launch
-            your career in the tech space.
+          <p
+            className="m-b-65 m-t-20 text-cyan f-s-16 home-letter-spacing mb-16"
+            style={{ opacity: 0.85 }}
+          >
+            Our Accelerator program is designed to connect the most <br />{" "}
+            ambitious university graduates with long-term employment and <br />{" "}
+            help you launch your career in the tech space.
           </p>
           <Button
             name={`KNOW US MORE`}
@@ -129,20 +130,26 @@ const Home = () => {
                 alt="bullet"
               />
             </div>
-            <div className="d-flex flex-column justify-content-between gap-20" >
+            <div className="d-flex flex-column justify-content-between gap-20">
               <div>
                 <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">Apply</h3>
-                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
+                <p
+                  className="mb-0 text-cyan f-s-16"
+                  style={{ letterSpacing: 0 }}
+                >
                   Apply for any of our learning tracks. Techstudio offers
-                  diverse <br /> range of learning courses designed to give you the
-                  skills needed <br /> to grow professionally.
+                  diverse <br /> range of learning courses designed to give you
+                  the skills needed <br /> to grow professionally.
                 </p>
               </div>
               <div className="my-1 m-b-25">
                 <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
                   Get Admitted
                 </h3>
-                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
+                <p
+                  className="mb-0 text-cyan f-s-16"
+                  style={{ letterSpacing: 0 }}
+                >
                   Receive an admission offer and reserve your spot in the
                   program. <br /> You will complete the required KYC procedures
                 </p>
@@ -151,8 +158,12 @@ const Home = () => {
                 <h3 className="fs-2xl mb-5 text-dark f-w-800 f-s-24">
                   Start classes
                 </h3>
-                <p className="mb-0 text-cyan f-s-16" style={{letterSpacing: 0}}>
-                  Attend your first class, partake in group projects, and 1:1 <br />
+                <p
+                  className="mb-0 text-cyan f-s-16"
+                  style={{ letterSpacing: 0 }}
+                >
+                  Attend your first class, partake in group projects, and 1:1{" "}
+                  <br />
                   sessions. Our team will keep an eye on your growth even <br />
                   after the training
                 </p>

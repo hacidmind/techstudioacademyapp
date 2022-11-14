@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg bg-blue fixed-top">
-    <div className="container py-3 px-10">
+    <div className="container py-3">
       <Link className="navbar-brand" to="/">
         <div className="d-flex align-items-center gap-2">
           <img src={techimage} alt="logo" />
@@ -25,10 +25,10 @@ const Navbar = () => (
       />
 
       <div
-        className="collapse navbar-collapse d-lg-flex justify-content-between"
+        className="collapse navbar-collapse d-lg-flex justify-content-between ms-24"
         id="navbarNavAltMarkup"
       >
-        <div className="navbar-nav align-items-center text-center gap-12 ms-lg-40 fs-sm">
+        <div className="navbar-nav align-items-center text-center gap-8 fs-sm">
           <Link
             className="nav-link active text-white"
             aria-current="page"
