@@ -6,8 +6,6 @@ import Row from "react-bootstrap/Row";
 import "../css/about.css";
 import { Images } from "../Icons&Images";
 import GetStarted from "../components/GetStarted";
-import { Images } from "../../Icons&Images";
-import GetStarted from "../../components/GetStarted";
 
 const About = () => {
   const values = [
@@ -118,6 +116,7 @@ const About = () => {
         <div>
           <img src={Images.aboutShowCase4} alt="about 4" />
         </div>
+        </section>
       <section className="about__section-2 mt-lg-5">
         <img src={Images.aboutGroup} alt="group" />
       </section>
@@ -156,7 +155,7 @@ const About = () => {
       </section>
       <GetStarted />
     </main>
-  );
+  )
 };
 
 export default About;
