@@ -76,7 +76,7 @@ const Navbar = () => (
               </li>
             </ul>
           </div>
-          <Link className="nav-link text-white" to="/about">
+          <Link className="nav-link text-white" to="/employers">
             Employers
           </Link>
           <Link className="nav-link text-white" to="/contact">

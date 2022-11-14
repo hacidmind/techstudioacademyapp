@@ -55,7 +55,7 @@ const DataScience = () => {
         courseDescription={courseDescription}
         courseIcons={courseIcons}
         courseCurriculum={courseCurriculum}
-        courseThread={Images.thread}
+        courseThread={Images.threadDataScience}
       />
     </main>
   );

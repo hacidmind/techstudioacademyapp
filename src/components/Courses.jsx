@@ -1,7 +1,8 @@
 import React from "react";
 
 import { Images } from "../Icons&Images";
-import GetStarted from "./GetStarted";
+import Button from "../components/buttons/Button";
+import BannerII from "../components/banners/BannerII";
 
 const Courses = ({
   courseIcons,
@@ -11,7 +12,7 @@ const Courses = ({
   courseThread,
 }) => {
   return (
-    <main className="container courses">
+    <main className="container courses m-t-50">
       <section className="courses__section-1">
         <article>
           <h2>{courseTitle}</h2>
@@ -21,7 +22,7 @@ const Courses = ({
         <article>
           <div>
             {courseIcons.map((icon) => (
-              <div className="course-icon">
+              <div className="course-icon" key={icon}>
                 <img src={icon} alt="html" />
               </div>
             ))}
@@ -68,17 +69,31 @@ const Courses = ({
         </article>
       </section>
       <section>
-        <GetStarted />
+        {/* BANNER COMPONENT */}
+      <main className="container mx-auto my-52 p-0 px-lg-10">
+        <BannerII>
+          <div className="ms-12 ms-lg-40 text-white py-20">
+            <span>Try TechStudio</span>
+            <h3 className="mt-7 fw-bolder">Get started with Techstudio</h3>
+            <Button
+              type={`btn btn-primary px-16`}
+              name={`Get Started`}
+              height={`40px`}
+            />
+          </div>
+        </BannerII>
+      </main>
       </section>
+      <div className="text-center f-w-800 f-s-32 text-black m-b-70">What you will learn</div>
       <section className="courses__section-4">
         <article>
           <img src={courseThread} alt="thread" />
         </article>
         <article>
           {courseCurriculum.map((item) => (
-            <div className="article-content pb-2">
-              <p>{item.title}</p>
-              <span>{item.desc}</span>
+            <div className="article-content pb-2 p-t-5 p-b-10" key={item.title}>
+              <p className="f-s-20">{item.title}</p>
+              <span className="f-s-16 ">{item.desc}</span>
             </div>
           ))}
         </article>

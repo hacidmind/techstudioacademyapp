@@ -11,6 +11,11 @@ import IconClock from "./TechStudioIcons/clock (4).png";
 import IconTuition from "./TechStudioIcons/money-bag.png";
 import IconColleague from "./TechStudioIcons/noun_colleague_3249817.png";
 import IconLearning from "./TechStudioIcons/noun_Learning_2531760.png";
+import noun_workspace_799121 from "./TechStudioImages/noun_workspace_799121.png";
+import noun_coding_3152169 from "./TechStudioImages/noun_coding_3152169.png";
+import noun_Designer_1469595 from "./TechStudioImages/noun_Designer_1469595.png";
+import noun_UiandUx_907062 from "./TechStudioImages/noun_Ui and Ux_907062.png";
+import noun_datascience_2475093 from "./TechStudioImages/noun_data science_2475093.png";
 import IconWorkSpace from "./TechStudioIcons/noun_workspace_799121.png";
 import IconInsurance from "./TechStudioIcons/Insurance.png";
 import team from "./TechStudioImages/team.png";
@@ -45,15 +50,45 @@ import node from "./TechStudioImages/Mask Group 81.png";
 import aws from "./TechStudioImages/Mask Group 83.png";
 import mongo from "./TechStudioImages/Mask Group 84.png";
 import heroku from "./TechStudioImages/Mask Group 86.png";
+import Group182 from "./TechStudioImages/Group 182.png";
 import thread from "./TechStudioImages/Group 25374.png";
+import threadDataScience from "./TechStudioImages/Group 25375.png";
 import thread1 from "./TechStudioImages/thread1.png";
+import Group25353 from "./TechStudioImages/Group 25353.png";
+import Group25354 from "./TechStudioImages/Group 25354.png";
 import thread2 from "./TechStudioImages/Group 25357.png";
 import icon01 from "./TechStudioImages/Group 25213.png";
 import icon02 from "./TechStudioImages/Group 25214.png";
 import icon03 from "./TechStudioImages/Group 25215.png";
 import logo from "./TechStudioImages/Image129.png";
+import meet from './TechStudioImages/meet.png';
+import front from "./TechStudioImages/Pair programming-rafiki.png";
+import ui from "./TechStudioImages/Design Process-rafiki.png";
+import graphic from "./TechStudioImages/Group 10041.png";
+import RepeatGrid47 from "./TechStudioImages/Repeat Grid 47.png";
+import cal from "./TechStudioIcons/calendar.png";
+import BlackBusinessman6 from "./TechStudioImages/Black Businessman-6.png";
+import nig from "./TechStudioImages/nigeria.png";
+import justify from './TechStudioIcons/justify icon1.jpg';
+import Bold from './TechStudioIcons/Bold icon1.jpg';
 
 const Images = {
+  threadDataScience,
+  nig,
+  RepeatGrid47,
+  noun_coding_3152169,
+  BlackBusinessman6,
+  Group182,
+  Group25354,
+  noun_datascience_2475093,
+  noun_UiandUx_907062,
+  noun_Designer_1469595,
+  noun_workspace_799121,
+  Group25353,
+  cal,
+  front,
+  graphic,
+  ui,
   ellipse,
   mask,
   aboutShowCase1,
@@ -107,7 +142,10 @@ const Images = {
   mongo,
   heroku,
   thread1,
-  thread2
+  thread2,
+  meet,
+  justify,
+  Bold
 };
 
 export default Images;

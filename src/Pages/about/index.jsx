@@ -1,6 +1,12 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Button from "../../components/buttons/Button";
+import BannerII from "../../components/banners/BannerII";
+// import "../../scss/about.scss";
 import { Images } from "../../Icons&Images";
-import GetStarted from "../../components/GetStarted";
+// import GetStarted from "../../components/GetStarted";
 
 const About = () => {
   const values = [
@@ -35,8 +41,42 @@ const About = () => {
       text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
     },
   ];
+
+  const team = [
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+    {
+      img: Images.meet,
+      name: "John Boyega",
+      role: "co-founder & CEO",
+    },
+  ];
+
   return (
-    <main class="container text-center mt-5 about">
+    <main class="container text-center mt-5 about m-top">
       <section className="about__section-1">
         <article className="section1-article1">
           <h6>KNOW US MORE</h6>
@@ -53,8 +93,8 @@ const About = () => {
             professional web developers and software engineer.
             <br />
             <br />
-            You’ll be provided with constant power and internet supply to make
-            you focus on the job at hand
+            You’ll be provided with constant power to make you focus on the job
+            at hand
           </p>
         </article>
         <article className="section1-article2">
@@ -62,7 +102,21 @@ const About = () => {
         </article>
       </section>
       <section className="about__section-2">
-        <img src={Images.aboutGroup} alt="group" />
+        <div>
+          <img src={Images.repeatGrid} alt="about1" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase1} alt="about1" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase2} alt="about2" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase3} alt="about3" />
+        </div>
+        <div>
+          <img src={Images.aboutShowCase4} alt="about 4" />
+        </div>
       </section>
       <section className="about__section-3">
         <h3>Driven by our core values</h3>
@@ -83,11 +137,34 @@ const About = () => {
         </article>
       </section>
       <section className="about__section-4">
-        <div>
-          <img src={Images.team} alt="team" />
-        </div>
+        <Row xs={1} md={3} className="g-4">
+          {team.map((val, idx) => (
+            <Col>
+              <Card className="border-0">
+                <Card.Img variant="top" src={val.img} />
+                <Card.Body>
+                  <Card.Title>{val.name}</Card.Title>
+                  <Card.Text>{val.role}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
       </section>
-      <GetStarted />
+{/* BANNER COMPONENT */}
+      <main className="container mx-auto my-52 p-0 px-lg-10">
+        <BannerII>
+          <div className="ms-12 ms-lg-40 text-white py-20">
+            <span>Try TechStudio</span>
+            <h3 className="mt-7 fw-bolder">Get started with Techstudio</h3>
+            <Button
+              type={`btn btn-primary px-16`}
+              name={`Get Started`}
+              height={`40px`}
+            />
+          </div>
+        </BannerII>
+      </main>
     </main>
   );
 };
