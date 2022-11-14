@@ -15,19 +15,19 @@ const Home = () => {
   };
   return (
     <main>
-      <main className="bg-blue mt-20">
+      <main className="bg-blue">
         <Hero />
       </main>
 
-      <main className="position-relative mt-20 mt-lg-16">
-        <article className="container px-10">
+      <main className="position-relative mt-20 mt-lg-16 px-7 px-xl-3">
+        <article className="container">
           <img
             className="d-none d-lg-block section_2_bg_img"
             style={imgStyle}
             alt="img"
             src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Mask_Group_91_sm51se.png"
           />
-          <h2 className="text-dark fs-3xl text-center text-lg-start f-s-32 f-w-800">
+          <h2 className="fw-bolder text-dark fs-3xl text-center text-lg-start">
             Why choose Techstudio?
           </h2>
           <article className="d-flex justify-content-end">
@@ -62,13 +62,14 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container mt-60 mb-52">
+      <main className="mt-60 mb-52 container p-0 p-lg-3">
         <Banner>
-          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-20">
+          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-7 p-lg-20 py-20">
             <p className="text-start text-lg-center lh-lg f-s-16">
               I have been trying to figure out a way to kickstart my career in
-              tech to no avail. I <br /> tried self tutorial, still nothing.
-              When I tried techstudio 10 weeks training, my story <br /> changed
+              tech to no avail. I <br className="d-none d-lg-block" /> tried
+              self tutorial, still nothing. When I tried techstudio 10 weeks
+              training, my story <br className="d-none d-lg-block" /> changed
               for better
             </p>
             <Profile />
@@ -76,7 +77,7 @@ const Home = () => {
         </Banner>
       </main>
 
-      <main className="container d-flex mb-20">
+      <main className="container d-flex mb-20 px-7 px-xl-3">
         <article className="d-none d-lg-block">
           <div style={{ width: `40rem` }} className="image-typing-hands">
             <img
@@ -99,14 +100,16 @@ const Home = () => {
         <article className="mt-14">
           <h4 className="text-info fs-lg m-b-16">TAKE A COURSE</h4>
           <h1 className="text-dark fw-bolder home-color-2 mt-4 mb-6">
-            Learn a skill to elevate <br /> your earning potential
+            Learn a skill to elevate <br className="d-none d-lg-block" /> your
+            earning potential
           </h1>
           <p
             className="m-b-65 m-t-20 text-cyan f-s-16 home-letter-spacing mb-16"
             style={{ opacity: 0.85 }}
           >
-            Our Accelerator program is designed to connect the most <br />{" "}
-            ambitious university graduates with long-term employment and <br />{" "}
+            Our Accelerator program is designed to connect the most{" "}
+            <br className="d-none d-lg-block" /> ambitious university graduates
+            with long-term employment and <br className="d-none d-lg-block" />{" "}
             help you launch your career in the tech space.
           </p>
           <Button
@@ -181,9 +184,9 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container mx-auto my-52 p-0 px-lg-10">
+      <main className="container mx-auto my-52 p-0 px-lg-3">
         <BannerII>
-          <div className="ms-12 ms-lg-40 text-white py-20">
+          <div className="ms-7 ms-lg-40 text-white py-20">
             <span>Try TechStudio</span>
             <h3 className="mt-7 fw-bolder">Get started with Techstudio</h3>
             <Button

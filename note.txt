@@ -15,3 +15,9 @@ test: Everything related to testing
 docs: Everything related to documentation
 chore: Regular code maintenance.
 in this manner git commit -m "feat: The new feature you're adding to a particular application"
+
+
+//how to use css modules
+import style from <stlye folder>
+usage:
+style.<selector>

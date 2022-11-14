@@ -6,8 +6,8 @@ const Illustration = ({ size, img, title, desc }) => {
       <div>
         <img src={img} alt="illustration" />
       </div>
-      <h4 className="fs-lg fw-bold text-dark my-5 home-color-3 f-s-18">{title}</h4>
-      <p style={{ letterSpacing: `1px` }} className="fs-sm px-20 px-lg-0">
+      <h4 className="fs-lg fw-bold text-dark my-5 home-color-3">{title}</h4>
+      <p style={{ letterSpacing: `1px` }} className="fs-sm">
         {desc}
       </p>
     </div>

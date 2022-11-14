@@ -76,7 +76,7 @@ $font-sizes: (
   xl: "1.25rem",
   "2xl": "1.5rem",
   "3xl": "2rem",
-  "4xl": "2.25rem",
+  "4xl": "2.75rem",
   "5xl": "3rem",
   "6xl": "3.75rem",
   "7xl": "4.5rem",
@@ -101,7 +101,6 @@ $font-sizes: (
 @import "./getStarted.scss";
 @import "./olt.scss";
 @import "./page14.scss";
-@import "./helper.scss";
 
 // OVERIDES
 .dropdown-toggle::after {
@@ -133,6 +132,13 @@ html {
 
 a {
   text-decoration: none !important;
+}
+
+.logo {
+  width: 10%;
+  @media screen and (min-width: 992px) {
+    width: initial;
+  }
 }
 
 .cc-container {

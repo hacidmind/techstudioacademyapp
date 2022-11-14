@@ -5,7 +5,7 @@ const Banner = ({ children }) => {
   return (
     <div
 
-      className="w-100 position-relative bg-blue  d-flex align-items-center justify-content-center bannerI"
+      className="w-100 position-relative bg-blue d-flex align-items-center justify-content-center bannerI"
     >
       <img
         className="position-absolute top-0 start-0 my-10 mx-16 d-none d-lg-block"
