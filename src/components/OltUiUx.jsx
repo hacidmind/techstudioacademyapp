@@ -17,7 +17,7 @@ const OltUiUx = () => {
                             create prototypes and wireframes using standard design tools including Figma and Balsamiq.
                         </p>
                         <div className="row m-t-30 olt-comp-3">
-                            <div className="col-md-2">
+                            <div className="col-md-2 text-center">
                                 <img src={Images.cal} alt="" width={21} className="img-fluid m-b-5" /> <span className='f-s-14 '>10 Weeks</span>
                             </div>
                             <div className="col-md-4">
