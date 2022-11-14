@@ -12,8 +12,8 @@ const OltGraphics = () => {
                         <div className="p-t-10 ">
                             <h4 className='f-w-600 f-s-22 olt-h4'>Graphics Design</h4>
                             <p className='f-s-14 p-t-10 olt-p'>
-                                You’ll participate in a wide-range of design projects where you’ll gain hands-on experience with <br />
-                                the fundamentals of design methodology. You will gain industry knowledge on how to create <br />
+                                You’ll participate in a wide-range of design projects where you’ll gain hands-on experience with
+                                the fundamentals of design methodology. You will gain industry knowledge on how to create
                                 illustrations, edit images using tools like Adobe illustrator, photoshop and Corel Draw
                             </p>
                             <div className="row m-t-30 olt-comp-3">
