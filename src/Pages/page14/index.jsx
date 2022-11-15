@@ -5,8 +5,7 @@ import { Images } from "../../Icons&Images";
 
 function Page14(){
     return (
-      <div className="page14">
-        
+      <div className="page14 m-t-20">
         <div className="sec_1 container">
           <div className="find_div">
             <h3 className="firsth2">Find the best talents to grow your team</h3>

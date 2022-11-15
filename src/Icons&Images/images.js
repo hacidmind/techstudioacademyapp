@@ -60,6 +60,7 @@ import icon01 from "./TechStudioImages/Group 25213.png";
 import icon02 from "./TechStudioImages/Group 25214.png";
 import icon03 from "./TechStudioImages/Group 25215.png";
 import logo from "./TechStudioImages/Image129.png";
+import meet from './TechStudioImages/meet.png';
 import front from "./TechStudioImages/Pair programming-rafiki.png";
 import ui from "./TechStudioImages/Design Process-rafiki.png";
 import graphic from "./TechStudioImages/Group 10041.png";
@@ -140,6 +141,7 @@ const Images = {
   heroku,
   thread1,
   thread2,
+  meet,
   justify,
   Bold
 };

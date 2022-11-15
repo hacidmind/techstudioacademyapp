@@ -10,13 +10,12 @@ const page15 = () => {
   const bold = ()=>{
     console.log("bold clicked");
 
-
   }
   return (
     
-    <div >
-      <div className='page15 container'>
-        <h2 className='Job' >Job Requirement</h2>   
+    <div className='page15' >
+      <div className='container'>
+        <h2 className='Job' id="h2" >Job Requirement</h2>   
         
         <div className='container layout'>
           <div className='grid_div'>
@@ -121,14 +120,14 @@ const page15 = () => {
           <div className='flex_div'>
             <div className='skills edit' >
               
-              <p className='p_skills pay'><b>What is the pay range</b></p>
+              <p className='p_skills'><b>What is the pay range</b></p>
                 
-            <select className="job_inp4">
-                <option value="select">Hiring for a week</option>
-                <option value="select">Software Developer</option>
-                <option value="select">Frontend Developer</option>
-                <option value="select">Data Sciences</option>
-            </select>  
+              <select className="job_inp4  payr">
+                  <option value="select">Hiring for a week</option>
+                  <option value="select">Software Developer</option>
+                  <option value="select">Frontend Developer</option>
+                  <option value="select">Data Sciences</option>
+              </select>  
               
             </div>
             <div className='skills edit' >
@@ -136,7 +135,7 @@ const page15 = () => {
               <p className='p_skills2'><b>For how will you be taking applicants</b></p>
                 
               
-              <select className="job_inp4">
+              <select className="job_inp4 ">
                 <option value="select">set application deadline</option>
                 <option value="select">Software Developer</option>
                 <option value="select">Frontend Developer</option>
