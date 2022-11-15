@@ -17,13 +17,13 @@ const Hero = () => {
           Techstudio offers graduates a path to a fulfilling career in the world
           of tech
         </p>
-        <div className="gap-5 gap-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-xl-start">
-          <Link to="/olt" className="btn btn-primary py-3 px-10">
+        <div className="gap-5 d-flex flex-column flex-md-row justify-content-center justify-content-xl-start">
+          <Link to="/olt" className="btn btn-primary py-3 w-100">
             Take a course
           </Link>
           <Link
             to="/"
-            className="btn btn-outline text-white border border-white py-3 px-10"
+            className="btn btn-outline text-white border border-white py-3 w-100"
           >
             Log In
           </Link>
