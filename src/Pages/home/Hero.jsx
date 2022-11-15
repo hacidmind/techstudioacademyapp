@@ -6,18 +6,18 @@ const Hero = () => {
   return (
     <div
       style={{ height: `calc(100vh - 60px)` }}
-      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-10 justify-content-lg-between container px-7 px-xl-3"
+      className="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center justify-content-lg-between container px-sm-7 px-xl-3"
     >
-      <div className="text-white text-center text-lg-start ">
-        <h1 className="fs-4xl fw-bolder">
+      <div className="text-white text-center text-lg-start">
+        <h1 className="fw-bolder">
           Your Dream Tech <br className="d-none d-xl-block" /> Career Starts
           Here
         </h1>
-        <p className="my-8 m-b-50">
+        <p className="my-8">
           Techstudio offers graduates a path to a fulfilling career in the world
           of tech
         </p>
-        <div className="gap-10 d-flex justify-content-center justify-content-lg-start my-20 my-lg-0">
+        <div className="gap-5 gap-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
           <Link to="/olt" className="btn btn-primary py-3 px-10">
             Take a course
           </Link>
@@ -29,7 +29,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-center">
+      <div className="d-flex align-items-center justify-content-center w-75">
         <img
           className="hero_img"
           src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476079/samples/techstudio/Icons%20and%20Images/Tech%20Studio%20images/Group_25358_ehga5i.png"

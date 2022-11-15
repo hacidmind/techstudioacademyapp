@@ -19,18 +19,18 @@ const Home = () => {
         <Hero />
       </main>
 
-      <main className="position-relative mt-20 mt-lg-16 px-7 px-xl-3">
-        <article className="container">
+      <main className="position-relative mt-20 mt-lg-16 ">
+        <article className="">
           <img
             className="d-none d-lg-block section_2_bg_img"
             style={imgStyle}
             alt="img"
             src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476113/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/Mask_Group_91_sm51se.png"
           />
-          <h2 className="fw-bolder text-dark fs-3xl text-center text-lg-start">
+          <h2 className="fw-bolder text-dark text-center text-lg-start container">
             Why choose Techstudio?
           </h2>
-          <article className="d-flex justify-content-end">
+          <article className="d-flex justify-content-end container px-sm-7 px-xl-3">
             <div className="row justify-content-between align-items-center gap-5 mt-5 section-2">
               <div className="col-12 col-lg-5 text-center text-lg-start">
                 <Illustration
@@ -62,9 +62,9 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="mt-60 mb-52 container p-0 p-lg-3">
+      <main className="mt-60 mb-lg-52 container p-0 p-lg-3">
         <Banner>
-          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-7 p-lg-20 py-20">
+          <div className="text-white text-center d-flex flex-column align-items-lg-center gap-10 p-3 p-sm-7 p-lg-20 py-20">
             <p className="text-start text-lg-center lh-lg f-s-16">
               I have been trying to figure out a way to kickstart my career in
               tech to no avail. I <br className="d-none d-lg-block" /> tried
@@ -77,9 +77,9 @@ const Home = () => {
         </Banner>
       </main>
 
-      <main className="container d-flex mb-20 px-7 px-xl-3">
-        <article className="d-none d-lg-block">
-          <div style={{ width: `40rem` }} className="image-typing-hands">
+      <main className="container d-flex mb-20 px-sm-7 px-xl-3">
+        <article className="d-none d-lg-block cc-width">
+          <div className="image-typing-hands">
             <img
               className="image-one"
               src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476117/samples/techstudio/Icons%20and%20Images/Icons%20and%20Images/Tech%20Studio%20images/person-using-macbook-air-1181555_oo5fry.png"
@@ -97,20 +97,19 @@ const Home = () => {
             />
           </div>
         </article>
-        <article className="mt-14">
+        <article className="mt-14 cc-width">
           <h4 className="text-info fs-sm fw-semibold">TAKE A COURSE</h4>
-          <h1 className="text-dark fw-bolder home-color-2 mt-4 mb-6">
+          <h2 className="text-dark fw-bolder mt-4 mb-6">
             Learn a skill to elevate <br className="d-none d-lg-block" /> your
             earning potential
-          </h1>
+          </h2>
           <p
-            className="text-cyan home-letter-spacing mb-16"
+            className="text-cyan home-letter-spacing mb-16 pe-xl-32"
             style={{ opacity: 0.85 }}
           >
-            Our Accelerator program is designed to connect the most{" "}
-            <br className="d-none d-lg-block" /> ambitious university graduates
-            with long-term employment and <br className="d-none d-lg-block" />{" "}
-            help you launch your career in the tech space.
+            Our Accelerator program is designed to connect the most ambitious
+            university graduates with long-term employment and help you launch
+            your career in the tech space.
           </p>
           <Button
             name={`KNOW US MORE`}
@@ -120,15 +119,14 @@ const Home = () => {
         </article>
       </main>
 
-      <main className="container px-10">
+      <main className="container px-sm-10">
         <article className="row flex-column-reverse flex-lg-row mb-52">
           <article
             className="d-flex align-items-start gap-xl-10 mt-10 col-12 col-lg-6"
             style={{ height: `40rem` }}
           >
-            <div>
+            <div className="d-none">
               <img
-                className="h-75 d-none d-lg-block"
                 src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1667476074/samples/techstudio/Icons%20and%20Images/Tech%20Studio%20images/Group_2535625_kxnc8c.png"
                 alt="bullet"
               />
@@ -173,7 +171,7 @@ const Home = () => {
               </div>
             </div>
           </article>
-          <article className="col-12 col-lg-6">
+          <article className="col-12 col-lg-6 d-sm-none d-lg-block">
             <img
               className="w-100"
               // style={{ transform: `translateX(3rem)` }}
@@ -186,7 +184,7 @@ const Home = () => {
 
       <main className="container mx-auto my-52 p-0 px-lg-3">
         <BannerII>
-          <div className="ms-7 ms-lg-40 text-white py-20 py-xl-0">
+          <div className="ms-3 ms-sm-7 ms-lg-40 text-white py-20 py-xl-0">
             <span>Try TechStudio</span>
             <h3 className="mt-7 fw-bold">Get started with Techstudio</h3>
             <Button

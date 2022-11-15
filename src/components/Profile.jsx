@@ -19,7 +19,7 @@ const Profile = () => {
         />
       </div>
       <div className="text-start">
-        <h4 className="text-info fs-xl fw-bold">Sherif Sorunke</h4>
+        <h5 className="text-info fs-xl fw-bold">Sherif Sorunke</h5>
         <p className="text-white fs-sm">Product Designer, Smartace</p>
       </div>
     </div>
