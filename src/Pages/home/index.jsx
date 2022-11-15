@@ -15,7 +15,7 @@ const Home = () => {
   };
   return (
     <main>
-      <main className="bg-blue">
+      <main className="bg-blue py-lg-20 py-xl-0">
         <Hero />
       </main>
 

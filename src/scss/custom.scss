@@ -143,7 +143,7 @@ body {
   @media screen and (min-width: 360px) {
     font-size: calc(14px + 6 * ((100vw - 360px) / 1440));
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
@@ -197,9 +197,9 @@ a {
 }
 
 .hero_img {
-  width: 80%;
-  @media screen and (min-width: 1024px) {
-    width: 100%;
+  width: 100%;
+  @media screen and (min-width: 850px) {
+    width: 75%;
   }
 }
 
