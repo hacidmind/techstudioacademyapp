@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-blue">
       <div className="container">
-        <footer className="py-20 px-10 text-white">
+        <footer className="py-20 px-3 px-xl-0 text-white">
           <div className="row">
             <div className="col-12 col-lg-3 mb-3">
               <div>
@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="d-flex flex-column align-items-center  flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div className="d-flex flex-column align-items-center  flex-lg-row justify-content-between py-4 my-4 border-top">
             <p>&copy; 2022 TechStudio Academy</p>
             <ul className="list-unstyled d-flex gap-5">
               <li className="ms-3">
