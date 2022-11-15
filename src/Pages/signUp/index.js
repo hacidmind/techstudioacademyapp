@@ -29,7 +29,7 @@ const SignUp = () => {
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label text-grey">Time Schedule</label>
-                                    <select class="form-select py-2" aria-label="Default select example">
+                                    <select class="form-select py-2 text-cyan" aria-label="Default select example">
                                         <option selected>Weekday Classes</option>
                                         <option value="1">Weekend Classes</option>
                                         <option value="2">Online</option>
