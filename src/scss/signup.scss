@@ -1,0 +1,50 @@
+.signup{
+    font-size: 14px;
+}
+.signin{
+    font-size: 14px;
+}
+
+.signup label{
+    color: #4A5568;
+}
+.signin label{
+    color: #4A5568;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .signup-image{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .signup-image{
+        width: 100%;
+        height: 90%;
+        margin-top: 65px;
+    }
+
+    .signin form{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .payment form{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+
+.payment-img{
+    width: 270px !important;
+    height: 260px !important;
+}
+
+.payment{
+    font-size: 14px;
+}

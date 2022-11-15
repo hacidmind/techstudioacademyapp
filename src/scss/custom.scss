@@ -27,7 +27,8 @@ $theme-colors: (
 $custom-colors: (
   "blue": #1f2666,
   "cyan": #1c1d1d,
-  // "another-blue": #0266f4,
+  "grey": #4A5568,
+  "blackish": #1A1A1A
 );
 
 // Merge the maps
@@ -97,6 +98,7 @@ $font-sizes: (
   "7xl": "4.5rem",
   "8xl": "6rem",
   "9xl": "8rem",
+  "24": "24px"
 );
 //
 // $display-font-family: "Open Sans", sans-serif;

@@ -71,8 +71,12 @@ import BlackBusinessman6 from "./TechStudioImages/Black Businessman-6.png";
 import nig from "./TechStudioImages/nigeria.png";
 import justify from './TechStudioIcons/justify icon1.jpg';
 import Bold from './TechStudioIcons/Bold icon1.jpg';
+import signinImage from './TechStudioImages/Mask Group 43.png';
+import smileyFacePayment from './TechStudioImages/Smiley face-pana.png';
 
 const Images = {
+  smileyFacePayment,
+  signinImage,
   threadDataScience,
   nig,
   RepeatGrid47,

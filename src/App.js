@@ -13,6 +13,10 @@ import ErrPage from "./Pages/404/ErrPage";
 import Olt from "./Pages/ourlearningtrack";
 import Page14 from "./Pages/page14";
 import Page15 from "./Pages/page15";
+import SignUp from "./Pages/signUp";
+import SignIn from "./Pages/signIn";
+import MakePayment from "./Pages/makePayment";
+import ProceedToPayment from "./Pages/proceedToPayment";
 
 const App = () => {
   return (
@@ -31,6 +35,10 @@ const App = () => {
             <Route exact path="/olt" element={<Olt />} />
             <Route exact path="/employers" element={<Page14 />} />
             <Route exact path="/page15" element={<Page15 />} />
+            <Route exact path="/signup" element={<SignUp />} />
+            <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/makepayment" element={<MakePayment />} />
+            <Route exact path="/proceedtopayment" element={<ProceedToPayment />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>

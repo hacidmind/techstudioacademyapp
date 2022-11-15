@@ -2,7 +2,7 @@ import React from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import techimage from "../Icons&Images/TechStudioImages/Image129.png";
-import Button from "../components/buttons/Button";
+// import Button from "../components/buttons/Button";
 import { FaChevronDown } from "react-icons/fa";
 import { useEffect } from "react";
 
@@ -102,16 +102,18 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="d-flex gap-3 justify-content-center my-10 my-lg-0">
-            <Button
+            {/* <Button
               name="Sign In"
               type={`btn btn-primary px-8 fs-sm`}
               height={`40px`}
-            />
-            <Button
+            /> */}
+            {/* <Button
               name="Sign Up"
               type={`btn btn-outline px-8 border-0 text-white fs-sm`}
               height={`40px`}
-            />
+            /> */}
+            <Link className="btn btn-primary px-8 fs-sm" to="/signin">Sign In</Link>
+            <Link className="btn btn-outline px-8 border-0 text-white fs-sm " to="/signup">Sign Up</Link>
           </div>
         </div>
       </div>
