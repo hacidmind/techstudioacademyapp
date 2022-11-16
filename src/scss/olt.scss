@@ -16,9 +16,7 @@
 
 .olt-bg-blue {
   background-image: url('../Icons&Images/TechStudioImages/Rectangle\ 7792.png');
-  // height: 50%;
   width: 100%;
-  // padding: 64px 180px 165px 100px;
   padding: 64px 50px 165px;
   overflow-x: hidden !important;
 }
@@ -31,13 +29,15 @@
   width: 95%;
 }
 
+
+
 .olt-comp-3 {
   font-family: 'Rubik', sans-serif;
   color: #130019;
 }
 
 .btn-enroll {
-  padding: 13px 58px;
+  padding: 13px 58px !important;
   border-radius: 8px;
   background-color: #0266F4;
 }
@@ -60,7 +60,6 @@
 
   .olt-bg-blue {
     background-image: url('../Icons&Images/TechStudioImages/Rectangle\ 7792.png');
-    // height: 50%;
     width: 100%;
     padding: 50px 0px;
     overflow-x: hidden !important;
@@ -72,6 +71,7 @@
 
   .olt-comp-4 {
     text-align: center;
+    // margin-bottom: 20px;
   }
 
   .olt-comp-4-b {
@@ -79,7 +79,9 @@
     text-align: center;
   }
 
-
+  .olt-img{
+    text-align: center;
+  }
 
 }
 
@@ -120,8 +122,11 @@
   background-color: #F0EFEF;
 }
 
+// Apply styles starting from medium devices and up to extra large devices
+@media (min-width: 993px) and (max-width: 1199.98px) { 
+  .olt-img-ui{
+    width: 100%;
+    height: auto;
+  }
 
-
-// .olt-link:visited{
-//   color: olivedrab !important;
-// }
+}
