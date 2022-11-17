@@ -17,6 +17,8 @@ import SignUp from "./Pages/signUp";
 import SignIn from "./Pages/signIn";
 import MakePayment from "./Pages/makePayment";
 import ProceedToPayment from "./Pages/proceedToPayment";
+import Blog from "./Pages/blog";
+import BlogPage from "./Pages/blog/BlogPage";
 
 const App = () => {
   return (
@@ -39,6 +41,8 @@ const App = () => {
             <Route exact path="/signin" element={<SignIn />} />
             <Route exact path="/makepayment" element={<MakePayment />} />
             <Route exact path="/proceedtopayment" element={<ProceedToPayment />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route path="blogPage/:id" element={<BlogPage />} />
             <Route exact path="*" element={<ErrPage />} />
           </Routes>
         </Layout>

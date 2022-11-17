@@ -73,8 +73,22 @@ import justify from './TechStudioIcons/justify icon1.jpg';
 import Bold from './TechStudioIcons/Bold icon1.jpg';
 import signinImage from './TechStudioImages/Mask Group 43.png';
 import smileyFacePayment from './TechStudioImages/Smiley face-pana.png';
+import coffee from './TechStudioImages/Group 3989.png';
+import blog from './TechStudioImages/Mask Group 37.png';
+import blogPage from './TechStudioImages/Mask Group 48.png';
+import newspaper from './TechStudioImages/Mask Group 32.png';
+import laboratory from './TechStudioImages/Mask Group 35.png';
+import sanitizer from './TechStudioImages/Mask Group 34.png';
+import farmer from './TechStudioImages/Mask Group 36.png';
 
 const Images = {
+  farmer,
+  sanitizer,
+  laboratory,
+  newspaper,
+  blogPage,
+  blog,
+  coffee,
   smileyFacePayment,
   signinImage,
   threadDataScience,
