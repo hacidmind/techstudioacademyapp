@@ -8,19 +8,18 @@ const BlogCarousel = () => {
   const { blogs } = useAppProvider();
 
   return (
-    <Carousel controls={false} variant='dark'>
-      {blogs &&
-        blogs.map((item) => (
-          <Carousel.Item>
-            <BlogPost
-              key={item.id}
-              date={item.date}
-              title={item.title}
-              description={item.desc}
-              id={item.id}
-            />
-          </Carousel.Item>
-        ))}
+    <Carousel controls={false} variant="dark">
+      {blogs.map((item) => (
+        <Carousel.Item>
+          <BlogPost
+            key={item.id}
+            date={item.date}
+            title={item.title}
+            description={item.desc}
+            id={item.id}
+          />
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 };

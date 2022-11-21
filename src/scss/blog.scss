@@ -272,6 +272,22 @@
   .blog__section1 {
     padding-left: 20px;
     padding-right: 20px;
+
+    .blog__section1-article1 {
+      width: 100%;
+
+      h3 {
+        width: 100%;
+      }
+
+      div {
+        width: 100%;
+      }
+    }
+
+    .blog__section1-article2 {
+      display: none;
+    }
   }
   .blog__section2 {
     padding: 57px 20px 110px 20px;

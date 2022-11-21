@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Badge from "react-bootstrap/Badge";
 import { AiOutlinePlus } from "react-icons/ai";
 
@@ -8,15 +8,17 @@ import { Images } from "../../Icons&Images";
 const Page15 = () => {
   const [skills, setSkills] = useState([]);
   const [skill, setSkill] = useState("");
+  const skillRef = useRef();
 
   const [tools, setTools] = useState([]);
   const [tool, setTool] = useState("");
+  const toolRef = useRef();
 
   const handlePassInSkill = (e) => {
     e.preventDefault();
     if (skill) {
       setSkills([...skills, skill]);
-      setSkill("");
+      skillRef.current.value = "";
     }
   };
 
@@ -24,7 +26,7 @@ const Page15 = () => {
     e.preventDefault();
     if (tool) {
       setTools([...tools, tool]);
-      setTool("");
+      toolRef.current.value = "";
     }
   };
 
@@ -37,7 +39,7 @@ const Page15 = () => {
   };
 
   return (
-    <div className="page15 container">
+    <main className="page15 container">
       <h2 className="Job">Job Requirement</h2>
 
       <div className="container layout">
@@ -158,7 +160,9 @@ const Page15 = () => {
                 <input
                   className="job_inp3"
                   placeholder="Add new skill"
+                  ref={skillRef}
                   onChange={(e) => setSkill(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && handlePassInSkill(e)}
                 />
                 <AiOutlinePlus onClick={handlePassInSkill} />
               </div>
@@ -178,7 +182,9 @@ const Page15 = () => {
                 <input
                   className="job_inp3"
                   placeholder="Add new tool"
+                  ref={toolRef}
                   onChange={(e) => setTool(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && handlePassInTool(e)}
                 />
                 <AiOutlinePlus onClick={handlePassInTool} />
               </div>
@@ -248,7 +254,7 @@ const Page15 = () => {
 
         <button className="btn btn-primary ">SUBMIT</button>
       </div>
-    </div>
+    </main>
   );
 };
 
