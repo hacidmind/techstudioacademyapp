@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "./App.scss";
 import Layout from "./hocs/Layout";
 import Home from "./Pages/home";
 import About from "./Pages/about";
@@ -19,13 +20,16 @@ import MakePayment from "./Pages/makePayment";
 import ProceedToPayment from "./Pages/proceedToPayment";
 import Blog from "./Pages/blog";
 import BlogPage from "./Pages/blog/BlogPage";
+import StudentLayout from "./student";
+import Intro from "./student/intro";
+import Dashboard from "./student/dashboard";
 
 const App = () => {
   return (
     <div>
       <Router>
-        <Layout>
-          <Routes>
+        <Routes>
+          <Route element={<Layout />}>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about-us" element={<About />} />
             <Route exact path="/frontend" element={<Frontend />} />
@@ -40,12 +44,21 @@ const App = () => {
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/signin" element={<SignIn />} />
             <Route exact path="/makepayment" element={<MakePayment />} />
-            <Route exact path="/proceedtopayment" element={<ProceedToPayment />} />
+            <Route
+              exact
+              path="/proceedtopayment"
+              element={<ProceedToPayment />}
+            />
             <Route exact path="/blog" element={<Blog />} />
             <Route path="blogPage/:id" element={<BlogPage />} />
             <Route exact path="*" element={<ErrPage />} />
-          </Routes>
-        </Layout>
+          </Route>
+          <Route element={<StudentLayout />}>
+            <Route exact path="/username" element={<Intro />} />
+            <Route exact path="/username/dashboard" element={<Dashboard />} />
+            <Route exact path="*" element={<ErrPage />} />
+          </Route>
+        </Routes>
       </Router>
     </div>
   );
