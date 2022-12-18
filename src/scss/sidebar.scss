@@ -1,18 +1,48 @@
 .side-nav {
-    min-height: 100vh;
-    width: 100%;
-    justify-content: flex-start;
-    padding-top: 31px;
-    background-color: #1F2666;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 31px 18px 0;
+  background-color: #1f2666;
 
-    section {
-        width: 28px;
-        height: 28px;
+  section {
+    width: 28px;
+    height: 28px;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
+  }
+
+  article {
+    margin-top: 58px;
+    gap: 37px;
+
+    .active {
+      color: #ffffff;
+
+      P {
+        color: #ffffff;
+      }
+    }
+
+    div {
+      width: 26px;
+      height: 15px;
+      color: #c0c0c180;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    p {
+      color: #c0c0c180;
+      font-size: 14px;
+    }
+  }
 }
