@@ -9,8 +9,14 @@ import pdf from './TechStudioIcons/Icon awesome-file-pdf.png';
 import excel from './TechStudioIcons/Icon simple-microsoftexcel.png';
 import docs from './TechStudioIcons/Icon awesome-file-alt.png';
 import powerPoint from './TechStudioIcons/Icon simple-microsoftpowerpoint.png';
+import download from './TechStudioIcons/Icon feather-download.png';
+import video from './TechStudioIcons/Icon awesome-video.png';
+import play from './TechStudioIcons/Icon ionic-md-play-circle.png';
 
 const Icons = {
+    play,
+    video,
+    download,
     powerPoint,
     docs,
     excel,

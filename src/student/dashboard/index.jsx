@@ -78,6 +78,45 @@ const Dashboard = () => {
       icon: Icons.docs,
       title: 'Portfolio.docx'
     },
+    {
+      icon: Icons.docs,
+      title: 'Portfolio.docx'
+    },
+    {
+      icon: Icons.docs,
+      title: 'Portfolio.docx'
+    },
+  ]
+
+  const videos = [
+    {
+      icon: Icons.video,
+      title: 'Design and Insights.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Design Methodology.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Application for Leave.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Working with colours.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Tools and tips.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Presenting your design.mp4'
+    },
+    {
+      icon: Icons.video,
+      title: 'Portfolio.mp4'
+    },
   ]
 
   return (
@@ -116,14 +155,49 @@ const Dashboard = () => {
             <div>
               <h5>Resources</h5>
               <div className="app__flex-3">
-                <p onClick={handleShowPDF} className={showPdf && 'active'}>PDF</p>
-                <p style={{borderLeft: "1px solid #FFFFFF"}}>VIDEO</p>
-                <p style={{borderLeft: "1px solid #FFFFFF"}}>AUDIO</p>
+                <p onClick={handleShowPDF} className={showPdf ? 'active app__flex' : 'app__flex'}>PDF</p>
+                <p style={{borderLeft: "1px solid #0000001F"}} onClick={handleShowVideo} className={showVideo ? 'active app__flex' : 'app__flex'}>VIDEO</p>
+                <p className="app__flex" style={{borderLeft: "1px solid #0000001F"}}>AUDIO</p>
               </div>
               {showPdf && (
-              <article>
+              <article className="column-flex">
                 {books.map((item) => (
-                  <div>okay</div>
+                  <div className="app__flex-2">
+                    <div className="app__flex-2">
+                      <div className="app__flex">
+                        <img src={item.icon} alt="logo" />
+                      </div>
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="app__flex-2">
+                      <div className="app__flex">
+                        <img src={Icons.download} alt="download icon" />
+                      </div>
+                      <p className="download">Download</p>
+                    </div>
+                  </div>
+                ))}
+              </article>
+              )}
+              {showVideo && (
+                <article className="column-flex">
+                {videos.map((item) => (
+                  <div className="app__flex-2">
+                    <div className="app__flex-2">
+                      <div className="app__flex">
+                        <img src={item.icon} alt="logo" />
+                      </div>
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="app__flex-2">
+                      <div className="app__flex">
+                        <img src={Icons.download} alt="download icon" />
+                      </div>
+                     <div className="app__flex">
+                      <img src={Icons.play} alt="play" />
+                     </div>
+                    </div>
+                  </div>
                 ))}
               </article>
               )}

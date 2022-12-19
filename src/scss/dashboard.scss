@@ -3,6 +3,10 @@
   background: #f5f6fa;
   align-items: flex-start;
   width: 100%;
+
+  p {
+    margin: 0;
+  }
 }
 
 .studentDashboard__section1 {
@@ -134,7 +138,7 @@
       height: 424px;
       background: #ffffff;
       border-radius: 4px;
-      padding: 23px 43px 37px 30px;
+      padding: 23px 12px 37px 30px;
       box-shadow: 0 4px 20px #6c757d0f;
 
       h5 {
@@ -144,14 +148,15 @@
         margin-bottom: 19px;
       }
 
-      &>div {
+      & > div {
         width: 80%;
-        background: #F5F6FA;
+        background: #f5f6fa;
         padding: 3px;
         border-radius: 4px;
+        margin-bottom: 25px;
 
         p {
-          margin-bottom: 0;
+          margin: 0;
           width: 33.33%;
           text-align: center;
           cursor: pointer;
@@ -162,9 +167,60 @@
         }
 
         .active {
-            background-color: #FFFFFF;
-            border: 0.5px solid #0000000A;
-            box-shadow: 0 3px 8px #0000001F;
+          color: #000000;
+          font-size: 14px;
+          font-weight: 600;
+
+          background-color: #ffffff;
+          border: 0.5px solid #0000000a;
+          box-shadow: 0 3px 8px #0000001f;
+        }
+      }
+
+      & > article {
+        height: 80%;
+        padding-right: 28px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #cccccc;
+        }
+
+        & > div {
+          width: 100%;
+          margin-bottom: 23px;
+
+          & > div {
+            gap: 13px;
+            justify-content: center;
+            align-items: center;
+
+            & > div {
+              width: 12px;
+              height: 16px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+            p {
+              color: #152935;
+              font-size: 14px;
+            }
+
+            .download {
+              color: #0266f4;
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
