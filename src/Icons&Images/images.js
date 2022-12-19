@@ -82,8 +82,10 @@ import sanitizer from './TechStudioImages/Mask Group 34.png';
 import farmer from './TechStudioImages/Mask Group 36.png';
 import intro from '../assets/Icons and Images/Tech Studio images/Group 25128.png';
 import user from './TechStudioImages/Group 10157.png';
+import tutor from './TechStudioImages/Group 10370.png';
 
 const Images = {
+  tutor,
   user,
   intro,
   farmer,
