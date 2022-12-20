@@ -133,3 +133,11 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .mobile-nav {
+    & > article {
+      padding: 27px 2.5%;
+    }
+  }
+}
