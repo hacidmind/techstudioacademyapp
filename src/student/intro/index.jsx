@@ -16,9 +16,7 @@ const Intro = () => {
         <h1>Hello Tomiwa!</h1>
         <p>
           Welcome to Techstudio. Thanks for choosing this platform, we are here
-          to guide you through
-          <br />
-          every step of your tech journey.
+          to guide you through every step of your tech journey.
         </p>
         <h5>Tools you need to download to get started on this course</h5>
         <div>
@@ -38,7 +36,7 @@ const Intro = () => {
         </h6>
         <button onClick={() => navigate('/username/dashboard')}>Get started</button>
         <article>
-          <img src={Images.intro} alt="" />
+          <img src={Images.intro} alt="intro" />
         </article>
       </section>
       <div>

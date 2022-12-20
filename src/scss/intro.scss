@@ -6,7 +6,7 @@
   align-items: flex-start;
   justify-content: center;
 
-  padding-left: 62px;
+  padding-left: 3.875rem;
 
   & > section {
     color: #1f2666;
@@ -16,21 +16,21 @@
     position: relative;
 
     width: 80%;
-    padding: 60px 0 76px 70px;
+    padding: 3.75rem 0 4.75rem 4.37rem;
 
     h1 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 800;
       margin-bottom: 14px;
     }
 
     & > p {
-      font-size: 16px;
+      font-size: 1rem;
       margin-bottom: 52px;
     }
 
     h5 {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 600;
       margin-bottom: 14px;
     }
@@ -40,7 +40,7 @@
       margin-bottom: 52px;
 
       & > p {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 8px;
 
         display: flex;
@@ -57,13 +57,13 @@
 
     & > h6 {
       color: #1f2666;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: normal;
       margin-bottom: 60px;
     }
 
     button {
-      width: 160px;
+      width: 10rem;
       height: 48px;
 
       background: #0266f4;
@@ -72,13 +72,13 @@
       border: none;
       border-radius: 4px;
 
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 600;
     }
 
     article {
-      width: 421px;
-      height: 400px;
+      width: 26.313rem;
+      height: 25rem;
       position: absolute;
       bottom: -2.5%;
       left: 80%;
@@ -89,5 +89,64 @@
     position: absolute;
     top: 27px;
     right: 33px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .intro {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+
+    & > section {
+      width: 90%;
+      padding: 5%;
+
+      div {
+        width: 60%;
+      }
+
+      article {
+        display: none;
+      }
+    }
+
+    & > div {
+      top: 2%;
+      right: 5%;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .intro {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    & > section {
+      background: none;
+      border-radius: 0;
+      box-shadow: unset;
+
+      width: 98%;
+      padding: 5%;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      & > p {
+        margin-bottom: 20px;
+      }
+
+      div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    & > div {
+      top: 3%;
+      right: 5%;
+    }
   }
 }

@@ -5,11 +5,11 @@ import Sidebar from "./sidebar";
 
 const StudentLayout = () => {
   return (
-    <div className="app__flex-3">
+    <div className="app__flex-3 outlet">
       <div style={{ width: "6%", height: "100%" }}>
         <Sidebar />
       </div>
-      <div style={{ width: "94%", height: "100%" }}>
+      <div className="outlet" style={{ width: "94%", height: "100%" }}>
         <Outlet />
       </div>
     </div>

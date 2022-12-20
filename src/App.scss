@@ -28,3 +28,24 @@
     justify-content: center;
     flex-direction: column;
   }
+
+  @media screen and (max-width: 998px) {
+    .outlet {
+      width: 100%;
+      background-color: #f5f6fa;
+      flex-direction: column;
+      position: relative;
+
+      &>div:nth-child(1) {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 8% !important;
+      }
+
+      &>div:nth-child(2) {
+        width: 100% !important;
+      }
+    }
+  }
