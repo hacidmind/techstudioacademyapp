@@ -270,7 +270,7 @@
   background: rgba(0, 0, 0, 0.7);
   margin: 0;
   overflow-y: hidden;
-  
+
   .assignment-modal {
     color: #080730;
     height: 100%;
@@ -281,135 +281,134 @@
     // justify-content: space-between;
     // align-items: flex-end;
 
-   &>article {
-    & > div:nth-child(1) {
-      width: 100%;
-      align-items: flex-start;
-      margin-bottom: 45px;
+    & > article {
+      & > div:nth-child(1) {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 45px;
 
-      h3 {
-        margin: 0;
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        svg {
+          color: #0266f4;
+          cursor: pointer;
+        }
+      }
+      h5 {
+        margin-bottom: 12px;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 600;
       }
 
-      svg {
-        color: #0266F4;
-        cursor: pointer;
-      }
-    }
-    h5 {
-      margin-bottom: 12px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    h6 {
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .description-input {
-      width: 100%;
-      margin-bottom: 56px;
-
-      textarea {
-        width: 100%;
-        height: 120px;
-        background-color: #fefeff;
-        border: 0.8px solid #ced4da;
-        border-radius: 3.25px;
-        padding: 9.5px 7px 12px 9.5px;
-        outline: none;
-        resize: none;
-        margin: 0;
-        overflow-y: scroll;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
-        color: #1c1d1d;
+      h6 {
         font-size: 14px;
-        flex-direction: column;
+        margin-bottom: 12px;
       }
-    }
 
-    .attachment {
-      font-weight: 600;
-    }
-
-    article {
-      width: 100%;
-      height: 40px;
-
-      & > div {
-        height: 100%;
+      .description-input {
         width: 100%;
-        cursor: pointer;
-        .file-upload {
-          display: none;
-        }
+        margin-bottom: 56px;
 
-        label {
-          height: 100%;
-          padding-left: 21px;
-          border-top-left-radius: 3.25px;
-          border-bottom-left-radius: 3.25px;
-          border: 1px dashed #0266f4;
-          background-color: #0266f41a;
+        textarea {
+          width: 100%;
+          height: 120px;
+          background-color: #fefeff;
+          border: 0.8px solid #ced4da;
+          border-radius: 3.25px;
+          padding: 9.5px 7px 12px 9.5px;
+          outline: none;
+          resize: none;
+          margin: 0;
+          overflow-y: scroll;
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
 
           color: #1c1d1d;
           font-size: 14px;
-          cursor: pointer;
-
-          svg {
-            color: #0266f4;
-            margin-right: 12px;
-          }
+          flex-direction: column;
         }
       }
 
-      button {
-        height: 100%;
-        width: 128px;
-        border: none;
-        border-radius: 3.75px;
-        background: #0266f4;
+      .attachment {
+        font-weight: 600;
+      }
 
-        color: #ffffff;
-        font-size: 14px;
+      article {
+        width: 100%;
+        height: 40px;
+
+        & > div {
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          .file-upload {
+            display: none;
+          }
+
+          label {
+            height: 100%;
+            padding-left: 21px;
+            border-top-left-radius: 3.25px;
+            border-bottom-left-radius: 3.25px;
+            border: 1px dashed #0266f4;
+            background-color: #0266f41a;
+
+            color: #1c1d1d;
+            font-size: 14px;
+            cursor: pointer;
+
+            svg {
+              color: #0266f4;
+              margin-right: 12px;
+            }
+          }
+        }
+
+        button {
+          height: 100%;
+          width: 128px;
+          border: none;
+          border-radius: 3.75px;
+          background: #0266f4;
+
+          color: #ffffff;
+          font-size: 14px;
+        }
       }
     }
-
-   }
     .modal-btns {
       gap: 20px;
       position: absolute;
       right: 2%;
       bottom: 58px;
-      
+
       button {
         font-size: 14px;
         cursor: pointer;
         border-radius: 4px;
         height: 36px;
       }
-      
+
       .submit {
         border: none;
         width: 144px;
-        background-color: #0266F4;
+        background-color: #0266f4;
 
-        color: #FBFEFF;
+        color: #fbfeff;
       }
 
       .cancel {
         width: 100px;
-        background-color: #FFFFFF52;
-        border: 1px solid #6C757D;
+        background-color: #ffffff52;
+        border: 1px solid #6c757d;
         color: #152935;
       }
     }
@@ -504,6 +503,23 @@
       }
     }
   }
+
+  .assignment-modalContainer {
+    .assignment-modal {
+      width: 100%;
+      padding-top: 70px;
+
+      & > article {
+        article {
+          & > div {
+            label {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -544,6 +560,28 @@
           .detail-item {
             & > div:nth-child(1) {
               width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .assignment-modalContainer {
+    .assignment-modal {
+      padding: 34px 10px;
+
+      & > article {
+        & > div:nth-child(1) {
+          h3 {
+            margin-left: 40px;
+          }
+        }
+
+        article {
+          & > div {
+            label {
+              padding-left: 10px;
             }
           }
         }

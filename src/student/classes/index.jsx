@@ -128,9 +128,9 @@ const Classes = () => {
   return (
     <>
       {toggleAssignment && (
-        <motion.div
-          whileInView={{ x: [1000, 0] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+        <motion.main
+          // whileInView={{ x: [1000, 0] }}
+          // transition={{ duration: 1, ease: "easeInOut" }}
           className="app__flex-5 assignment-modalContainer"
         >
           <section className="assignment-modal">
@@ -174,7 +174,7 @@ const Classes = () => {
               </button>
             </div>
           </section>
-        </motion.div>
+        </motion.main>
       )}
       <main className="classes">
         <section className="classes__section1 app__flex-2">
