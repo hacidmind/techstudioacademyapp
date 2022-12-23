@@ -24,6 +24,7 @@ import StudentLayout from "./student";
 import Intro from "./student/intro";
 import Dashboard from "./student/dashboard";
 import Classes from "./student/classes";
+import ClassDetail from "./student/classes/slugs";
 
 const App = () => {
   return (
@@ -58,6 +59,7 @@ const App = () => {
             <Route exact path="/username" element={<Intro />} />
             <Route exact path="/username/dashboard" element={<Dashboard />} />
             <Route exact path="/username/classes" element={<Classes />} />
+            <Route exact path="/username/classes/:slugs" element={<ClassDetail />} />
             <Route exact path="*" element={<ErrPage />} />
           </Route>
         </Routes>

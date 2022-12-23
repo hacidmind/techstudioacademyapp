@@ -14,8 +14,10 @@ import video from './TechStudioIcons/Icon awesome-video.png';
 import play from './TechStudioIcons/Icon ionic-md-play-circle.png';
 import clock from './TechStudioIcons/Icon ionic-md-time.png';
 import search from './TechStudioIcons/Icon feather-search.png';
+import clock2 from './TechStudioIcons/alarm-clock (1).png';
 
 const Icons = {
+    clock2,
     search,
     clock,
     play,
