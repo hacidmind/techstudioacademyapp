@@ -84,8 +84,10 @@ import intro from '../assets/Icons and Images/Tech Studio images/Group 25128.png
 import user from './TechStudioImages/Group 10157.png';
 import tutor from './TechStudioImages/Group 10370.png';
 import classStudent from './TechStudioImages/Group 25274.png';
+import videocall from './TechStudioImages/Mask Group 87.png';
 
 const Images = {
+  videocall,
   classStudent,
   tutor,
   user,

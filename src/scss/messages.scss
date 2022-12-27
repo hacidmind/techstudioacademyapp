@@ -1,0 +1,223 @@
+.messages {
+  width: 100%;
+  height: 100vh;
+  align-items: flex-start;
+  overflow-y: hidden;
+  background-color: #f5f6fa;
+}
+
+.messages__list {
+  width: 28%;
+  height: 100vh;
+
+  .messages__list-head {
+    padding-top: 31px;
+    height: 23%;
+    background-color: #ffffff;
+
+    .head-header {
+      height: 5%;
+      align-items: center;
+      gap: 10px;
+      padding-left: 31px;
+      margin-bottom: 62px;
+      h1 {
+        color: #1f2666;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      span {
+        background-color: #0266f41a;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+
+        color: #0266f4;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .head-search {
+      width: 100%;
+      height: 5%;
+      input {
+        width: 80%;
+        height: 40px;
+        margin-bottom: 34.5px !important;
+        border: 0.8px solid #ced4da;
+        border-radius: 3.25px;
+        background-color: #fefeff;
+
+        color: #95a8b8;
+        font-size: 14px;
+        padding: 9.5px 12px;
+      }
+    }
+  }
+
+  .messages__list-body {
+    // border: 1px solid blue;
+    height: 77%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .active {
+      color: red;
+      background-color: #0266f41a;
+    }
+
+    & > div {
+      padding: 20px 17px 28px 21px;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border-top: 1px solid #f5f6fa;
+      cursor: pointer;
+
+      .body-user {
+        width: 14%;
+        height: 45.71px;
+      }
+
+      .body-snippet {
+        width: 80%;
+
+        & > div {
+          width: 100%;
+          margin-bottom: 14px;
+          h6 {
+            color: #1c1d1d;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+          }
+
+          span {
+            background: #0266f4;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+
+        p {
+          margin: 0;
+          color: #1c1d1d;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.messages__info {
+  width: 72%;
+  height: 100vh;
+  background-color: #ffffff;
+  border-left: 1px solid #f5f6fa;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .messages__info-header {
+    height: 23.1%;
+    padding-top: 2%;
+    padding-right: 33.5px;
+    padding-left: 37px;
+    border-bottom: 1px solid #f5f6fa;
+
+    .header-user {
+      width: 100%;
+      margin-bottom: 1%;
+    }
+
+    .header-messenger {
+      gap: 19.5px;
+
+      .messenger-icon {
+        width: 45.71px;
+        height: 41.71px;
+      }
+
+      .messenger-details {
+        width: 100%;
+        h4 {
+          color: #1c1d1d;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+
+        & > div {
+            width: 70%;
+          p {
+            color: #6C757D;
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .messages__info-body {
+
+    .body-message {
+        padding-top: 10px;
+        padding-left: 100px;
+        padding-right: 151px;
+        border-bottom: 1px solid #f5f6fa;
+
+        h5 {
+            color: #1C1D1D;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: #080730;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #6C757D;
+            font-size: 14px;
+            margin-bottom: 25.5px;
+        }
+
+        button {
+            width: 144px;
+            height: 40px;
+            border: none;
+            border-radius: 4px;
+            background: #0266F4;
+            margin-bottom: 40px;
+
+            color: #FBFEFF;
+            font-size: 14px;
+        }
+    }
+  }
+}

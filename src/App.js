@@ -25,6 +25,8 @@ import Intro from "./student/intro";
 import Dashboard from "./student/dashboard";
 import Classes from "./student/classes";
 import ClassDetail from "./student/classes/slugs";
+import VideoCall from "./student/classes/slugs/videocall";
+import Messages from "./student/messages";
 
 const App = () => {
   return (
@@ -60,6 +62,8 @@ const App = () => {
             <Route exact path="/username/dashboard" element={<Dashboard />} />
             <Route exact path="/username/classes" element={<Classes />} />
             <Route exact path="/username/classes/:slugs" element={<ClassDetail />} />
+            <Route exact path="/username/classes/:slugs/videocall" element={<VideoCall />} />
+            <Route exact path="/username/messages" element={<Messages />} />
             <Route exact path="*" element={<ErrPage />} />
           </Route>
         </Routes>

@@ -15,8 +15,16 @@ import play from './TechStudioIcons/Icon ionic-md-play-circle.png';
 import clock from './TechStudioIcons/Icon ionic-md-time.png';
 import search from './TechStudioIcons/Icon feather-search.png';
 import clock2 from './TechStudioIcons/alarm-clock (1).png';
+import cam from './TechStudioIcons/Icon ionic-ios-videocam.png';
+import slides from './TechStudioIcons/Icon feather-copy.png';
+import mic from './TechStudioIcons/Icon feather-mic.png';
+import share from './TechStudioIcons/Icon material-laptop-windows.png';
 
 const Icons = {
+    share,
+    mic,
+    slides,
+    cam,
     clock2,
     search,
     clock,
