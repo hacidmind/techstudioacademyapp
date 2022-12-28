@@ -40,15 +40,15 @@ const CreateClass = () => {
           <label>Prefence</label>
           <div className="form-input-2 app__flex-3 checkbox">
             <div className="app__flex-2">
-              <input type="checkbox" name="" id="" />
+              <input type="radio" name="" id="" />
               <label>Online</label>
             </div>
             <div className="app__flex-2">
-              <input type="checkbox" name="" id="" />
+              <input type="radio" name="" id="" />
               <label>Offline</label>
             </div>
             <div className="app__flex-2">
-              <input type="checkbox" name="" id="" />
+              <input type="radio" name="" id="" />
               <label>Both</label>
             </div>
           </div>

@@ -185,7 +185,7 @@ const Classes = () => {
                     </div>
                     <div>
                       <button
-                        onClick={() => navigate("/student/classes/slugs")}
+                        onClick={() => navigate("/student/classes/slugs/videocall")}
                       >
                         Start Class
                       </button>
