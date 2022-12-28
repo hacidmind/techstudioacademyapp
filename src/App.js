@@ -69,7 +69,7 @@ const App = () => {
             <Route exact path="/student/classes" element={<StudentClasses />} />
             <Route exact path="/student/classes/:slugs" element={<ClassDetail />} />
             <Route exact path="/student/classes/:slugs/videocall" element={<VideoCall />} /> 
-            <Route exact path="/classes/messages" element={<StudentMessages />} />
+            <Route exact path="/student/messages" element={<StudentMessages />} />
             <Route exact path="*" element={<ErrPage />} />
           </Route>
             {/* tutor dashboard routes */}
