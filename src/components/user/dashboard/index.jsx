@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { MdLaptopWindows } from "react-icons/md";
 
@@ -19,6 +19,7 @@ const Dashboard = ({
 }) => {
   const [showPdf, setShowPdf] = useState(true);
   const [showVideo, setShowVideo] = useState(false);
+  const navigate = useNavigate();
 
   const handleShowPDF = () => {
     setShowPdf(true);
@@ -111,6 +112,9 @@ const Dashboard = ({
           <article className="mobile app__flex">
             <User />
           </article>
+          {tutor && (<article className="article1-button">
+            <button onClick={() => navigate('/tutor/classes')}>Create class</button>
+          </article>)}
         </article>
         <article className="studentDashboard__section1-article2">
           <h1>Hello {userName}!</h1>
