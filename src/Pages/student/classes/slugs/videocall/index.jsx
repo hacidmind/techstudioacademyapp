@@ -1,8 +1,8 @@
 import React from "react";
 import { RiRecordCircleLine } from "react-icons/ri";
-import { Icons, Images } from "../../../../Icons&Images";
+import { Icons, Images } from "../../../../../Icons&Images";
 
-import "../../../../scss/videocall.scss";
+import "../../../../../scss/videocall.scss";
 
 const VideoCall = () => {
 

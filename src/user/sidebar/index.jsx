@@ -4,27 +4,11 @@ import { HiMenuAlt4 } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import "../../scss/sidebar.scss";
-import { Icons, Images } from "../../Icons&Images";
+import { Images } from "../../Icons&Images";
 
-const Sidebar = () => {
+const Sidebar = ({sideBarItems}) => {
   const [toggle, setToggle] = useState(false);
-  const sideBarItems = [
-    {
-      name: "Dashboard",
-      icon: Icons.dashboard,
-      path: "/username/dashboard",
-    },
-    {
-      name: "Classes",
-      icon: Icons.classes,
-      path: "/username/classes",
-    },
-    {
-      name: "Messages",
-      icon: Icons.messages,
-      path: "/username/messages",
-    },
-  ];
+  
   return (
     <>
       <nav className="mobile-nav">

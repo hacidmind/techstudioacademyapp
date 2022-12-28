@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import "../../../scss/classDetail.scss";
-import User from "../../../components/User";
-import { Icons, Images } from "../../../Icons&Images";
-import AssignmentModal from "../../../components/AssignmentModal";
+import "../../../../scss/classDetail.scss";
+import User from "../../../../components/User";
+import { Icons, Images } from "../../../../Icons&Images";
+import AssignmentModal from "../../../../components/AssignmentModal";
 
 const ClassDetail = () => {
   const [showAbout, setShowAbout] = useState(true);

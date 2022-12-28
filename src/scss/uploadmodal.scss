@@ -1,0 +1,87 @@
+.upload-modal {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    
+    .modal-class {
+        width: 700px;
+        height: 409px;
+        border-radius: 3px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 3px #3F3F4426;
+        padding: 33.7px 41px 40px;
+
+        .modal-close {
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .modal-upload {
+            border: 2px dashed #DFE3E8;
+            border-radius: 2px;
+            width: 100%;
+            height: 220px;
+            gap: 32px;
+
+            &>div {
+                width: 53px;
+                height: 51px;
+            }
+
+            &>article {
+                input {
+                    display: none;
+                }
+
+                label {
+                    width: 106px;
+                    height: 48px;
+                    border-radius: 3px;
+                    border: 1px solid #C4CDD5;
+
+                    cursor: pointer;
+                    color: #212B36;
+                    font-size: 16px;
+                }
+
+                span {
+                    color: #637381;
+                    font-size: 16px;
+                    margin-top: 18.5px;
+                }
+
+            }
+        }
+
+        &>article {
+            margin-top: 31.5px;
+            width: 100%;
+            button {
+                width: 180px;
+                height: 40px;
+                border-radius: 4px;
+                border: none;
+                background: #0266F4;
+    
+                font-size: 16px;
+                color: #FBFEFF;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .upload-modal {
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+        background: rgba(0, 0, 0, 0.7);
+        
+        .modal-class {
+            width: 80%;
+        }
+    }
+}

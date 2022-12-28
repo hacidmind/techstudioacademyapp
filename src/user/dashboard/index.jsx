@@ -6,8 +6,17 @@ import { MdLaptopWindows } from "react-icons/md";
 import "../../scss/dashboard.scss";
 import { Icons, Images } from "../../Icons&Images";
 import User from "../../components/User";
+import UploadModal from "../../components/UploadModal";
 
-const Dashboard = () => {
+const Dashboard = ({
+  userName,
+  userIntroduction,
+  taskInfo,
+  userOption,
+  tutor,
+  setshowFileUploadModal,
+  showFileUploadModal,
+}) => {
   const [showPdf, setShowPdf] = useState(true);
   const [showVideo, setShowVideo] = useState(false);
 
@@ -20,33 +29,6 @@ const Dashboard = () => {
     setShowVideo(true);
     setShowPdf(false);
   };
-
-  const taskInfo = [
-    {
-      icon: Icons.TotalTask,
-      title: "Total Tasks",
-      no: 24,
-      bg: "#ECEAFE",
-    },
-    {
-      icon: Icons.PendingTask,
-      title: "Pending Tasks",
-      no: 12,
-      bg: "#D9EDFF",
-    },
-    {
-      icon: Icons.submittedTask,
-      title: "Tasks submitted",
-      no: 12,
-      bg: "#EBF0E6",
-    },
-    {
-      icon: Icons.timeLapse,
-      title: "Weeks Remaining",
-      no: "07",
-      bg: "#E000171A",
-    },
-  ];
 
   const books = [
     {
@@ -131,11 +113,8 @@ const Dashboard = () => {
           </article>
         </article>
         <article className="studentDashboard__section1-article2">
-          <h1>Hello Tomiwa!</h1>
-          <p>
-            Welcome to your techstudio dashboard. Learn anytime and boost your
-            skills
-          </p>
+          <h1>Hello {userName}!</h1>
+          <p>{userIntroduction}</p>
           <div>
             <img src={Images.intro} alt="dashoard" />
           </div>
@@ -155,7 +134,14 @@ const Dashboard = () => {
         </article>
         <article className="studentDashboard__section1-article4 app__flex-2">
           <div>
-            <h5>Resources</h5>
+            <h5 className="app__flex-2">
+              Resources{" "}
+              {tutor && (
+                <span onClick={() => setshowFileUploadModal(true)}>
+                  Upload New file
+                </span>
+              )}
+            </h5>
             <div className="app__flex-3">
               <p
                 onClick={handleShowPDF}
@@ -187,12 +173,7 @@ const Dashboard = () => {
                       </div>
                       <p>{item.title}</p>
                     </div>
-                    <div className="app__flex-2">
-                      <div className="app__flex">
-                        <img src={Icons.download} alt="download icon" />
-                      </div>
-                      <p className="download">Download</p>
-                    </div>
+                    <div className="app__flex-2">{userOption}</div>
                   </div>
                 ))}
               </article>
@@ -228,7 +209,7 @@ const Dashboard = () => {
             </div>
             <div>
               <div className="tutor-head app__flex-2">
-                <h6>Tutors Feedbacks</h6>
+                <h6>{tutor ? "Your inbox" : "Tutor's Feedbacks"}</h6>
                 <Link style={{ textDecoration: "underline" }} to="">
                   View all
                 </Link>
@@ -243,7 +224,9 @@ const Dashboard = () => {
                 </span>
               </div>
               <div className="tutor-footer app__flex-3">
-                <span className="name">Sorunke Sherif</span>
+                <span className={tutor ? "tutor-name" : "name"}>
+                  Sorunke Sherif
+                </span>
                 <span className="date">May 3, 2021</span>
               </div>
             </div>
@@ -281,10 +264,16 @@ const Dashboard = () => {
             </div>
           </div>
         </article>
-        <article className="studentDashboard__section2-article4">
-          <button>Get started</button>
+        <article className="studentDashboard__section2-article4 app__flex-2">
+          <button>Start class</button>
+          {tutor && <button className="reschedule-btn">Reschedule</button>}
         </article>
       </section>
+      {showFileUploadModal && (
+        <section className="tutor-upload-modal">
+          <UploadModal setshowFileUploadModal={setshowFileUploadModal} />
+        </section>
+      )}
     </main>
   );
 };

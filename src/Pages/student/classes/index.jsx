@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { CgAdd } from "react-icons/cg";
 import { motion } from "framer-motion";
 
-import "../../scss/classes.scss";
-import User from "../../components/User";
-import { Icons, Images } from "../../Icons&Images";
-import AssignmentModal from "../../components/AssignmentModal";
+import "../../../scss/classes.scss";
+import User from "../../../components/User";
+import { Icons, Images } from "../../../Icons&Images";
+import AssignmentModal from "../../../components/AssignmentModal";
 
 const Classes = () => {
   const [showLive, setShowLive] = useState(true);
@@ -185,7 +185,7 @@ const Classes = () => {
                     </div>
                     <div>
                       <button
-                        onClick={() => navigate("/username/classes/slugs")}
+                        onClick={() => navigate("/student/classes/slugs")}
                       >
                         Start Class
                       </button>

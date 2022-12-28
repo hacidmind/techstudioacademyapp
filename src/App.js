@@ -20,13 +20,18 @@ import MakePayment from "./Pages/makePayment";
 import ProceedToPayment from "./Pages/proceedToPayment";
 import Blog from "./Pages/blog";
 import BlogPage from "./Pages/blog/BlogPage";
-import StudentLayout from "./student";
-import Intro from "./student/intro";
-import Dashboard from "./student/dashboard";
-import Classes from "./student/classes";
-import ClassDetail from "./student/classes/slugs";
-import VideoCall from "./student/classes/slugs/videocall";
-import Messages from "./student/messages";
+import StudentLayout from "./Pages/student";
+import Intro from "./Pages/student/intro";    
+import ClassDetail from "./Pages/student/classes/slugs";
+import VideoCall from "./Pages/student/classes/slugs/videocall";
+// import Messages from "./student/messages";
+import StudentDashboard from "./Pages/student/dashboard";
+import StudentClasses from "./Pages/student/classes";
+import TutorLayout from "./Pages/tutor";
+import TutorDashboard from "./Pages/tutor/dashboard";
+import CreateClass from "./Pages/tutor/classes";
+import StudentMessages from "./Pages/student/messages";
+import TutorMessages from "./Pages/tutor/messages";
 
 const App = () => {
   return (
@@ -57,15 +62,23 @@ const App = () => {
             <Route path="blogPage/:id" element={<BlogPage />} />
             <Route exact path="*" element={<ErrPage />} />
           </Route>
+          {/* student dashboard routes */}
           <Route element={<StudentLayout />}>
-            <Route exact path="/username" element={<Intro />} />
-            <Route exact path="/username/dashboard" element={<Dashboard />} />
-            <Route exact path="/username/classes" element={<Classes />} />
-            <Route exact path="/username/classes/:slugs" element={<ClassDetail />} />
-            <Route exact path="/username/classes/:slugs/videocall" element={<VideoCall />} />
-            <Route exact path="/username/messages" element={<Messages />} />
+            <Route exact path="/student" element={<Intro />} />
+            <Route exact path="/student/dashboard" element={<StudentDashboard />} />
+            <Route exact path="/student/classes" element={<StudentClasses />} />
+            <Route exact path="/student/classes/:slugs" element={<ClassDetail />} />
+            <Route exact path="/student/classes/:slugs/videocall" element={<VideoCall />} /> 
+            <Route exact path="/classes/messages" element={<StudentMessages />} />
             <Route exact path="*" element={<ErrPage />} />
           </Route>
+            {/* tutor dashboard routes */}
+            <Route element ={<TutorLayout />}>
+              <Route exact path="/tutor/dashboard" element={<TutorDashboard />} />
+              <Route exact path="/tutor/classes" element={<CreateClass />} />
+              <Route exact path="/tutor/messages" element={<TutorMessages />} />
+              <Route exact path="*" element={<ErrPage />} />
+            </Route>
         </Routes>
       </Router>
     </div>
