@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-import "../../scss/sidebar.scss";
-import { Images } from "../../Icons&Images";
+import "../../../scss/sidebar.scss";
+import { Images } from "../../../Icons&Images";
 
 const Sidebar = ({sideBarItems}) => {
   const [toggle, setToggle] = useState(false);

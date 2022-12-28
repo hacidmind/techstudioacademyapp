@@ -24,7 +24,6 @@ import StudentLayout from "./Pages/student";
 import Intro from "./Pages/student/intro";    
 import ClassDetail from "./Pages/student/classes/slugs";
 import VideoCall from "./Pages/student/classes/slugs/videocall";
-// import Messages from "./student/messages";
 import StudentDashboard from "./Pages/student/dashboard";
 import StudentClasses from "./Pages/student/classes";
 import TutorLayout from "./Pages/tutor";

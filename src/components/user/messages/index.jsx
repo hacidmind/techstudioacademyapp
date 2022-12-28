@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
-import User from "../../components/User";
-import { Images } from "../../Icons&Images";
 
-import "../../scss/messages.scss";
+import "../../../scss/messages.scss";
+import User from "../../User";
+import { Images } from "../../../Icons&Images";
+
 
 const Messages = () => {
   const [active, setActive] = useState({

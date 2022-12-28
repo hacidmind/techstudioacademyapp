@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { MdLaptopWindows } from "react-icons/md";
 
-import "../../scss/dashboard.scss";
-import { Icons, Images } from "../../Icons&Images";
-import User from "../../components/User";
-import UploadModal from "../../components/UploadModal";
+import "../../../scss/dashboard.scss";
+import { Icons, Images } from "../../../Icons&Images";
+import User from "../../User";
+import UploadModal from "../../UploadModal";
 
 const Dashboard = ({
   userName,

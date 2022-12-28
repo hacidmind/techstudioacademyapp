@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sidebar from '../../../user/sidebar';
+import Sidebar from '../../../components/user/sidebar';
 import { Icons } from '../../../Icons&Images';
 
 const TutorSidebar = () => {

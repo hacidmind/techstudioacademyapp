@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RiDeleteBin5Line } from 'react-icons/ri';
 
 import { Icons } from "../../../Icons&Images";
-import Dashboard from "../../../user/dashboard";
+import Dashboard from "../../../components/user/dashboard";
 
 const TutorDashboard = () => {
     const [showFileUploadModal, setshowFileUploadModal] = useState(false);

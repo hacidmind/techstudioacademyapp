@@ -1,7 +1,7 @@
 import React from "react";
 import { Icons } from "../../../Icons&Images";
 
-import Dashboard from "../../../user/dashboard";
+import Dashboard from "../../../components/user/dashboard";
 
 const StudentDashboard = () => {
   const userName = "Tomiwa";

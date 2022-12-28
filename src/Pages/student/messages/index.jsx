@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Messages from '../../../user/messages';
+import Messages from '../../../components/user/messages';
 
 const StudentMessages = () => {
   return (
