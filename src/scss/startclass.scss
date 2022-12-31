@@ -1,0 +1,124 @@
+.start-class {
+    width: 100%;
+    height: 719px;
+    border-radius: 8px;
+    background-color: #1f2666;
+    padding: 55.35px 46.5px;
+
+    .class-tutor {
+      width: 100%;
+      height: 164px;
+      position: relative;
+      background-color: #dbebff;
+      border-radius: 20px 20px 20px 0px;
+      margin-bottom: 28px;
+
+      & > div {
+        position: absolute;
+        left: -25px;
+        & > div {
+          p {
+            color: #1f2666;
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 16px;
+          }
+
+          span {
+            color: #152935;
+            font-size: 14px;
+          }
+        }
+        .img-size {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .class-participants {
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 51px;
+
+      p {
+        color: #95a8b8;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      & > div {
+        gap: 7px;
+        & > div {
+          width: 53px;
+          height: 29px;
+          position: relative;
+          .participants {
+            width: 29px;
+            height: 29px;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            position: absolute;
+          }
+
+          .participant-0 {
+            left: 0;
+          }
+
+          .participant-2 {
+            right: 0;
+          }
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .class-schedule {
+      & > div {
+        margin-bottom: 32px;
+        gap: 15px;
+
+        .icon {
+          width: 21px;
+          height: 21px;
+        }
+
+        & > div {
+          align-items: flex-start;
+          justify-content: flex-start;
+          p {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          span {
+            color: #95a8b8;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .startClass-btn {
+    height: 40px;
+
+    button {
+      width: 144px;
+      height: 100%;
+      background-color: #0266f4;
+      border: none;
+      color: #fbfeff;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .start-class {
+        padding: 55.35px 20px;
+      }
+  }
