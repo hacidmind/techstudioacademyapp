@@ -31,7 +31,7 @@ import TutorDashboard from "./Pages/tutor/dashboard";
 import CreateClass from "./Pages/tutor/classes/createclass";
 import StudentMessages from "./Pages/student/messages";
 import TutorMessages from "./Pages/tutor/messages";
-import Reschedule from "./Pages/tutor/reschedule";
+import Reschedule from "./Pages/tutor/classes/reschedule";
 import TutorClasses from "./Pages/tutor/classes";
 
 const App = () => {
