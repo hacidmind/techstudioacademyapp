@@ -1,0 +1,194 @@
+.classesList {
+  width: 100%;
+
+  .classesList-article1 {
+    width: 30%;
+    background: #f5f6fa;
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    p {
+      align-items: center;
+      margin: 0;
+      width: 50%;
+      text-align: center;
+      cursor: pointer;
+
+      color: #000000;
+      font-size: 13px;
+    }
+
+    .active {
+      color: #000000;
+      font-size: 14px;
+
+      background-color: #ffffff;
+      border: 0.5px solid #0000000a;
+      box-shadow: 0 3px 8px #0000001f;
+    }
+  }
+
+  .classesList-article2 {
+    width: 100%;
+
+    & > div {
+      width: 100%;
+      padding: 16px 20px 21px;
+      border: 0.5px solid #cccccc;
+      margin-bottom: 20px;
+
+      .article2-user {
+        width: 57px;
+        height: 57px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .article2-details {
+        width: 90%;
+
+        & > div:nth-child(1) {
+          align-items: flex-start;
+          h6 {
+            max-width: 339px;
+            color: #080730;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 13px;
+          }
+
+          & > div {
+            width: 339px;
+            p {
+              color: #152935;
+              font-size: 14px;
+            }
+
+            & > div {
+              gap: 6px;
+              div {
+                width: 15px;
+                height: 15px;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+
+              span {
+                color: #152935;
+                font-size: 14px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        & > div:nth-child(2) {
+          width: 140px;
+          height: 40px;
+
+          button {
+            width: 100%;
+            height: 100%;
+            background: #0266f4;
+            border: none;
+            border-radius: 4px;
+
+            color: #fbfeff;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .classesList {
+    .classesList-article2 {
+      & > div {
+        .article2-details {
+          & > div:nth-child(1) {
+            h6 {
+              max-width: 300px;
+            }
+
+            & > div {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .classesList {
+    .classesList-article1 {
+      width: 50%;
+    }
+
+    .classesList-article2 {
+      & > div {
+        .article2-details {
+          width: 85%;
+
+          & > div:nth-child(1) {
+            & > div {
+              width: 300px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .classesList {
+    .classesList-article1 {
+      width: 50%;
+    }
+
+    .classesList-article2 {
+      & > div {
+        .article2-details {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          & > div:nth-child(1) {
+            margin-bottom: 10px;
+            h6 {
+              max-width: 100%;
+            }
+
+            & > div {
+              width: 100%;
+              p {
+                max-width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

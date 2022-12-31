@@ -1,8 +1,8 @@
 import React from "react";
+
 import Fileupload from "../../../atoms/fileupload/Fileupload";
 import StartClass from "../../../components/StartClass";
 import User from "../../../components/User";
-
 import "../../../scss/reschedule.scss";
 
 const Reschedule = () => {

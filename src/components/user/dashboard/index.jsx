@@ -113,7 +113,7 @@ const Dashboard = ({
             <User />
           </article>
           {tutor && (<article className="article1-button">
-            <button onClick={() => navigate('/tutor/classes')}>Create class</button>
+            <button onClick={() => navigate('/tutor/classes/create-class')}>Create class</button>
           </article>)}
         </article>
         <article className="studentDashboard__section1-article2">
