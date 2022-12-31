@@ -33,6 +33,7 @@ import StudentMessages from "./Pages/student/messages";
 import TutorMessages from "./Pages/tutor/messages";
 import Reschedule from "./Pages/tutor/classes/reschedule";
 import TutorClasses from "./Pages/tutor/classes";
+import TutorVideoClass from "./Pages/tutor/classes/slugs/videocall";
 
 const App = () => {
   return (
@@ -79,6 +80,7 @@ const App = () => {
               <Route exact path="/tutor/classes" element={<TutorClasses />} />
               <Route exact path="/tutor/classes/create-class" element={<CreateClass />} />
               <Route exact path="/tutor/classes/reschedule" element={<Reschedule />} />
+              <Route exact path="/tutor/classes/slugs/videochat" element={<TutorVideoClass />} />
               <Route exact path="/tutor/messages" element={<TutorMessages />} />
               <Route exact path="*" element={<ErrPage />} />
             </Route>
