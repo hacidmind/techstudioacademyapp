@@ -20,8 +20,10 @@ import slides from './TechStudioIcons/Icon feather-copy.png';
 import mic from './TechStudioIcons/Icon feather-mic.png';
 import share from './TechStudioIcons/Icon material-laptop-windows.png';
 import upload from './TechStudioIcons/Icon feather-image.png';
+import calendar from './TechStudioIcons/calendar.png';
 
 const Icons = {
+    calendar,
     upload,
     share,
     mic,

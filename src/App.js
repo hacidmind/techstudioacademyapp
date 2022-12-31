@@ -31,6 +31,7 @@ import TutorDashboard from "./Pages/tutor/dashboard";
 import CreateClass from "./Pages/tutor/classes";
 import StudentMessages from "./Pages/student/messages";
 import TutorMessages from "./Pages/tutor/messages";
+import Reschedule from "./Pages/tutor/reschedule";
 
 const App = () => {
   return (
@@ -75,6 +76,7 @@ const App = () => {
             <Route element ={<TutorLayout />}>
               <Route exact path="/tutor/dashboard" element={<TutorDashboard />} />
               <Route exact path="/tutor/classes" element={<CreateClass />} />
+              <Route exact path="/tutor/classes/reschedule" element={<Reschedule />} />
               <Route exact path="/tutor/messages" element={<TutorMessages />} />
               <Route exact path="*" element={<ErrPage />} />
             </Route>

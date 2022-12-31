@@ -85,8 +85,10 @@ import user from './TechStudioImages/Group 10157.png';
 import tutor from './TechStudioImages/Group 10370.png';
 import classStudent from './TechStudioImages/Group 25274.png';
 import videocall from './TechStudioImages/Mask Group 87.png';
+import participant1 from './TechStudioImages/Mask Group 88.png';
 
 const Images = {
+  participant1,
   videocall,
   classStudent,
   tutor,

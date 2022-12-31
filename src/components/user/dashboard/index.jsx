@@ -270,7 +270,7 @@ const Dashboard = ({
         </article>
         <article className="studentDashboard__section2-article4 app__flex-2">
           <button>Start class</button>
-          {tutor && <button className="reschedule-btn">Reschedule</button>}
+          {tutor && <button onClick={() => navigate('/tutor/classes/reschedule')} className="reschedule-btn">Reschedule</button>}
         </article>
       </section>
       {showFileUploadModal && (
